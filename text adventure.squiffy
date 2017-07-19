@@ -1,0 +1,56 @@
+
+<h2>Introducción</h2>
+
+<div align="center">
+<img src="C:\Users\usuario\Desktop\textadventure\1.png">
+</div> 
+
+Bienvenido a *Prueba de horror*, este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que sobrevivir a la aventura que te avecina. 
+
+Si tus puntos de vida llegan a 0, entonces habrás perdido. 
+
+@set Health = 5
+Tus puntos de vida son {Health}
+
+[Empezar]
+
+[Empezar]:
+        squiffy.story.go("Capitulo1");
+
+[[Capitulo1]]:
+@clear
+
+<h1>El cadaver sonriente</h1>
+
+<h2>Capítulo 1</h2>
+
+Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...
+
+* [A] Mueves tus manos desesperadamente, esperanzado a escapar.
+
+* [B] Lo observas fijamente, intentas permanecer tranquilo.
+
+* [C] Le preguntas "¿Quién eres?".
+
+[A]:
+Te mueves enérgicamente, pero notas que es imposible quitarse las ataduras. La expresión del hombre es de sorpresa al ver tu intento fallido; se detiene, abre los ojos, dibuja una "o" con sus labios, después de unos segundos, vuelve a sonreir.
+
+[B]:
+El hombre gordo lleva un mandil blanco, muy sucio, su aspecto es desaliñado; sus gordas mejillas casi le cubren los ojos; su sonrisa, blanca, impecable...desentona con su aspecto y lo vuelve inquietante; viste con una camisa blanca, un pantalón y zapatos negros.
+
+[C]:
+El hombre no da ninguna respuesta.
+
+[@1]:
+El hombre continua acercándose lentamente.
+
+[@2]:
+
+    squiffy.story.go("Inicio");
+
+[[Inicio]]:
+El hombre se postra frente a ti. Sonríe y con una reverencia majestuosa dice:
+
+-Buenas noches, mi nombre es..., bueno no creo que le importe. Pero debo decirle a usted que yo no soy de esas personas que se dejan asustar por cualquier cosa. No, señor. Soy un hombre, hecho y derecho. Más que eso, soy alguien quién inspira el miedo. Un hombre de la vida galante con la sangre fría y traicionera. Así es, una persona que tiene por pasatiempo matar personas por el simple hecho de hacerlo; sin embargo, últimamente me he olvidado de tales pasiones, debido a que no puedo controlar esta cruda sensación. Dios me protega, en verdad, Dios me protega, ya que está imagen me sigue a todos lados y no deja de atormentarme. ¡Ay de mí y de mi benevolente alma! Qué si de algo ha pecado, ha sido de asesinar, porque soy un hombre ejemplo, incluso doy limosna en misa. Si es que, siendo honestos, no hay persona como yo.
+
+
