@@ -20,6 +20,7 @@ https://github.com/textadventures/squiffy
 				var restart = function () {
 					$('#squiffy').squiffy('restart');
 				};
+				$("#restart").text("Reiniciar Partida") /*Aqui cambias lo que dice Restart*/
 				$('#restart').click(restart);
 				$('#restart').keypress(function (e) {
 					if (e.which !== 13) return;

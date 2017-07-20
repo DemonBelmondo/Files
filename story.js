@@ -555,6 +555,10 @@ var squiffy = {};
     };
 
     var methods = {
+        getSquiffy: function () {
+            return squiffy;
+        },
+
         init: function (options) {
             var settings = jQuery.extend({
                 scroll: 'body',
@@ -583,7 +587,7 @@ var squiffy = {};
             squiffy.set(attribute, value);
         },
         restart: function () {
-            if (!squiffy.ui.settings.restartPrompt || confirm('Are you sure you want to restart?')) {
+            if (!squiffy.ui.settings.restartPrompt || confirm('¿Estás seguro que quieres reiniciar el juego desde el inicio?')) {
                 squiffy.story.restart();
             }
         }

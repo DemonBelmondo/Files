@@ -1,4 +1,9 @@
+[[ready]]:
+    $("#restart").text("Reiniciar partida"); //change upper right "restart" to the word you want.
+    squiffy.ui.settings.restartPrompt=false; // disable prompt, "Are you sure you want to restart?".
+    squiffy.story.go("start");
 
+[[start]]:
 <h2>Introducción</h2>
 
 <div align="center">

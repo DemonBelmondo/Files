@@ -1,21 +1,29 @@
 a.squiffy-link
 {
-    text-decoration: underline;
-    color: Blue;
+    text-decoration: none;
+    color: yellow;
     cursor: pointer;
+    font-size: 30px;
+    text-align: right;
+    
 }
+
 a.squiffy-link.disabled
 {
-    text-decoration: inherit;
+    text-decoration: line-through;
     color: inherit !important;
     cursor: inherit;
 }
+
 a.squiffy-header-link
-{
-    text-decoration: underline;
-    color: Blue;
+{    
+    color: yellow;
     cursor: pointer;
+    font-size: 30px;
+    
 }
+
+
 div#squiffy-container
 {
     max-width: 700px;
@@ -26,7 +34,7 @@ div#squiffy-container
 div#squiffy-header
 {
     font-size: 14px;
-    text-align: right;
+    text-align: left;
 }
 div#squiffy
 {
@@ -40,3 +48,14 @@ hr {
     margin-top: 16px; margin-bottom: 16px;
 } 
 div#squiffy-container { text-align: justify; }
+
+body
+{
+    background: url("cellbackground.png") left repeat;
+    color: white
+}
+
+
+
+
+
