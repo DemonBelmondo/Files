@@ -555,10 +555,6 @@ var squiffy = {};
     };
 
     var methods = {
-        getSquiffy: function () {
-            return squiffy;
-        },
-
         init: function (options) {
             var settings = jQuery.extend({
                 scroll: 'body',
@@ -587,7 +583,7 @@ var squiffy = {};
             squiffy.set(attribute, value);
         },
         restart: function () {
-            if (!squiffy.ui.settings.restartPrompt || confirm('¿Estás seguro que quieres reiniciar el juego desde el inicio?')) {
+            if (!squiffy.ui.settings.restartPrompt || confirm('Are you sure you want to restart?')) {
                 squiffy.story.restart();
             }
         }
@@ -610,11 +606,21 @@ var get = squiffy.get;
 var set = squiffy.set;
 
 
-squiffy.story.start = '_default';
-squiffy.story.id = '849bd07260';
+squiffy.story.start = 'ready';
+squiffy.story.id = 'ee6add85ae';
 squiffy.story.sections = {
-	'_default': {
-		'text': "<h2>Introducción</h2>\n\n<div align=\"center\">\n<img src=\"C:\\Users\\usuario\\Desktop\\textadventure\\1.png\">\n</div> \n\n<p>Bienvenido a <em>Prueba de horror</em>, este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que sobrevivir a la aventura que te avecina. </p>\n<p>Si tus puntos de vida llegan a 0, entonces habrás perdido. </p>\n<p>Tus puntos de vida son {Health}</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"Empezar\" role=\"link\" tabindex=\"0\">Empezar</a></p>",
+	'ready': {
+		'text': "",
+		'js': function() {
+			$("#restart").text("Reiniciar partida"); //change upper right "restart" to the word you want.
+			squiffy.ui.settings.restartPrompt=false; // disable prompt, "Are you sure you want to restart?".
+			squiffy.story.go("start");
+		},
+		'passages': {
+		},
+	},
+	'start': {
+		'text': "<audio\n  src=\"gamebook.ogg\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<div align=\"center\">\n<img src=\"smiling.png\">\n</div> \n\n<p>Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones que afectarán el juego. </p>\n<p>Si tus puntos de vida llegan a 0, entonces habrás perdido. </p>\n<p>Tus puntos de vida son {Health}</p>\n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Empezar\" role=\"link\" tabindex=\"0\">Empezar</a>\n</div>",
 		'attributes': ["Health = 5"],
 		'passages': {
 			'Empezar': {

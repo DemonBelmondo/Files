@@ -4,21 +4,27 @@
     squiffy.story.go("start");
 
 [[start]]:
-<h2>Introducción</h2>
+
+<audio
+  src="gamebook.ogg"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
 
 <div align="center">
-<img src="C:\Users\usuario\Desktop\textadventure\1.png">
+<img src="smiling.png">
 </div> 
 
-Bienvenido a *Prueba de horror*, este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que sobrevivir a la aventura que te avecina. 
+Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones que afectarán el juego. 
 
 Si tus puntos de vida llegan a 0, entonces habrás perdido. 
 
 @set Health = 5
 Tus puntos de vida son {Health}
 
+<div align="center">
 [Empezar]
-
+</div> 
 [Empezar]:
         squiffy.story.go("Capitulo1");
 
