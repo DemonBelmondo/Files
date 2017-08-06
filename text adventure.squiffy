@@ -11,8 +11,9 @@
   Your browser does not support the <code>audio</code> element.
 </audio>
 
+
 <div align="center">
-<img src="smiling.png">
+<img src="smilingg.png">
 </div> 
 
 Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones que afectarán el juego. 
@@ -20,16 +21,28 @@ Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido com
 Si tus puntos de vida llegan a 0, entonces habrás perdido. 
 
 @set Health = 5
-Tus puntos de vida son {Health}
+<b><p><em>Tus puntos de vida son {Health}</em></p></b>
 
 <div align="center">
 [Empezar]
 </div> 
 [Empezar]:
-        squiffy.story.go("Capitulo1");
+
+    setTimeout(function(){
+       squiffy.story.go("Capitulo1");
+    },5000);
+        
 
 [[Capitulo1]]:
 @clear
+                
+
+<audio
+  src="resident.mp3"
+  autoplay>
+  <loop>
+  Your browser does not support the <code>audio</code> element.
+</audio>
 
 <h1>El cadaver sonriente</h1>
 
@@ -62,6 +75,102 @@ El hombre continua acercándose lentamente.
 [[Inicio]]:
 El hombre se postra frente a ti. Sonríe y con una reverencia majestuosa dice:
 
--Buenas noches, mi nombre es..., bueno no creo que le importe. Pero debo decirle a usted que yo no soy de esas personas que se dejan asustar por cualquier cosa. No, señor. Soy un hombre, hecho y derecho. Más que eso, soy alguien quién inspira el miedo. Un hombre de la vida galante con la sangre fría y traicionera. Así es, una persona que tiene por pasatiempo matar personas por el simple hecho de hacerlo; sin embargo, últimamente me he olvidado de tales pasiones, debido a que no puedo controlar esta cruda sensación. Dios me protega, en verdad, Dios me protega, ya que está imagen me sigue a todos lados y no deja de atormentarme. ¡Ay de mí y de mi benevolente alma! Qué si de algo ha pecado, ha sido de asesinar, porque soy un hombre ejemplo, incluso doy limosna en misa. Si es que, siendo honestos, no hay persona como yo.
+-Buenas noches, mi nombre es..., bueno no creo que le importe. Pero debo decirle a usted que yo no soy de esas personas que se dejan asustar por cualquier cosa. No, señor. Soy un hombre, hecho y derecho. Más que eso, soy alguien quién inspira el miedo. Un hombre de la vida galante con la sangre fría y traicionera. Así es, una persona que tiene por pasatiempo matar personas por el simple hecho de hacerlo; sin embargo, últimamente me he olvidado de tales pasiones, debido a que no puedo controlar esta cruda sensación. Dios me protega, en verdad, Dios me protega, ya que está imagen me sigue a todos lados y no deja de atormentarme. ¡Ay de mí y de mi benevolente alma! Qué si de algo ha pecado, ha sido de asesinar, porque soy un hombre ejemplo, incluso doy limosna en misa. Si es que, siendo honestos, no hay persona como yo. Las voces dentro de mi cabeza me piden a gritos que termine mi obra maestra, esa imagen en mi cabeza. Crearé el cuerpo perfecto, tu tienes una sonrisa perfecta...
+
+* [A] Aterrado por las locuras que habla el hombre comienzas a gritar.
+
+* [B] Lo observas fijamente, intentas no mostrar emoción alguna.
+
+* [C] Observas la habitación en la que te encuentras.
+
+[A]:
+Sueltas una alarido de terror. El hombre te observa, suelta una carcajada, y después de unos segundos empieza a toser grotescamente. Luego se acerca y te da una bofetada. 
+
+-¡Silencio! Nos puede escuchar...No quiero que nos escuche...
+<br>
+<br>
+@dec Health 
+<b><p><em>Has perdido 1 punto de vida. Tus puntos de vida son {Health}.</em></p></b>
+<br>
+<br>
 
 
+[B]:
+El hombre gordo te observa fijamente, luego alza las manos con magnificiencias como si agarrara de la cintura y la mano a alguien, a continuación empieza a dar pasos atrás, pasos adelante, con los ojos cerrados, por toda la habitación; pareciese que bailara al ritmo de una melodía. solo ves la silueta de aquel hombre que va y viene de entre la sombras al cículo de luz en el que te encuentras.
+
+
+[C]:
+Giras tu cabeza alrededor, todo es oscuro, a excepción de la luz que tienes encima de tu cabeza. Aquel hombre sonrie mientras baila...es como si siguiera el ritmo de algún vals de opera. 
+
+[@1]:
+El hombre baila, baila...baila con magnificencia. Baila...
+
+[@2]:
+
+    squiffy.story.go("Escena2");
+    
+
+[[Escena2]]:
+El hombre paró en seco, gira hacia a ti y dice:
+
+-Es hora, me están hablando. - El loco se adentra en la sombras de la habitación. Se escucha al fondo que se abre un cajón. Luego unos sonidos metálicos y, finalmente, el hombre regresa con un cuchillo de carnicero oxidado. Respira muy fuerte y parece muy ansioso.
+
+* [A] Le preguntas que tiene planeado hacer con el cuchillo. Intentas no vacilar.
+
+* [B] Le preguntas por su nombre.
+
+
+[A]:
+        squiffy.story.go("Escena3");
+
+
+[B]:
+-¿Nombre? - El hombre suelta una carcajada, pareciese que estuviera haciendo gárgaras- Ellos me han dicho que preguntarías por mi nombre. Yo no tengo nombre. No, si tienes. No, no debo...debería saberlo...no...
+
+Parece que el hombre tiene una batalla interna. Empiezas a pensar que le falta un tornillo, ya no luce tan cuerdo. 
+
+[[Escena3]]:
+El hombre gordo sonríe ampliamente, mostrando su dentadura perfecta, tan perfecta que te resulta antinatural, surreal. Te apunta con el cuchillo y dice:
+
+-Tu serás el indicado. Si, señor, usted, buen hombre, ha sido elegido por ellos. Tiene que ser como ellos, mejor que ellos...
+
+* [A] Preguntas: "¿De que me hablas?".
+
+* [B] Exclamas: "Eres un enfermo". Luego le escupes.
+
+* [C] Le sigues el juego: "¿Mejor que quiénes?".
+
+[A]:
+          squiffy.story.go("Escena4");
+          
+-¿Quieres ver? - pregunta, y sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado. 
+
+     
+[B]:
+Tu escupitajo alcanzo uno de sus zapatos.
+
+-¡¿Que?! - Su rostro se deforma terriblemente en un arrebato de ira - ¡¿Como te atreves a insultarme de esta forma?! ¡Tú que eres mi ser perfecto!
+
+El hombre gordo se acerca y te encaja el cuchillo en una pierna. Sueltas un alarido de dolor.
+
+-¡Ellos pensaban igual que tú! - Exclama mientras saca, sin remordimiento, el cuchillo.
+
+Casi te desmayas, pero por alguna razón la adrenalina y el pánico generado te mantiene despierto...tú odio hacia aquel ser repugnante ha despertado, pero tienes más miedo a no saber que será de ti si te quedas inconciente.
+<br>
+<br>
+@dec Health 
+<b><p><em>Has perdido 1 punto de vida. Tus puntos de vida son {Health}.</em></p></b>
+
+[C]:
+        squiffy.story.go("Escena4");
+        
+De repente, el maníaco se torna nervioso e inseguro...
+
+-Aquellos...los de la sonrisa - dice con cierto temor - Ellos me hablan, siempre me exigen más y más, caballero. No puedo decirles que no. Si me negara acabarían conmigo y mi dulce Marian. Eres el ser perfecto, eres empático, a pesar de todo...creo que te presentaré a Marian. Sí, ella es buena, ya verás...
+
+El hombre sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado. 
+
+        
+
+[[Escena4]]:
+lolol

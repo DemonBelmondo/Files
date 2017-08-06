@@ -620,20 +620,26 @@ squiffy.story.sections = {
 		},
 	},
 	'start': {
-		'text': "<audio\n  src=\"gamebook.ogg\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<div align=\"center\">\n<img src=\"smiling.png\">\n</div> \n\n<p>Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones que afectarán el juego. </p>\n<p>Si tus puntos de vida llegan a 0, entonces habrás perdido. </p>\n<p>Tus puntos de vida son {Health}</p>\n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Empezar\" role=\"link\" tabindex=\"0\">Empezar</a>\n</div>",
+		'text': "<audio\n  src=\"gamebook.ogg\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n\n<div align=\"center\">\n<img src=\"smilingg.png\">\n</div> \n\n<p>Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones que afectarán el juego. </p>\n<p>Si tus puntos de vida llegan a 0, entonces habrás perdido. </p>\n<p><b><p><em>Tus puntos de vida son {Health}</em></p></b></p>\n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Empezar\" role=\"link\" tabindex=\"0\">Empezar</a>\n</div>",
 		'attributes': ["Health = 5"],
 		'passages': {
 			'Empezar': {
 				'text': "",
 				'js': function() {
-					    squiffy.story.go("Capitulo1");
+					setTimeout(function(){
+					   squiffy.story.go("Capitulo1");
+					},5000);
+					    
 				},
 			},
 		},
 	},
 	'Capitulo1': {
 		'clear': true,
-		'text': "<h1>El cadaver sonriente</h1>\n\n<h2>Capítulo 1</h2>\n\n<p>Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Mueves tus manos desesperadamente, esperanzado a escapar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Lo observas fijamente, intentas permanecer tranquilo.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Le preguntas &quot;¿Quién eres?&quot;.</p>\n</li>\n</ul>",
+		'text': "<audio\n  src=\"resident.mp3\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<h1>El cadaver sonriente</h1>\n\n<h2>Capítulo 1</h2>\n\n<p>Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Mueves tus manos desesperadamente, esperanzado a escapar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Lo observas fijamente, intentas permanecer tranquilo.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Le preguntas &quot;¿Quién eres?&quot;.</p>\n</li>\n</ul>",
+		'js': function() {
+			            
+		},
 		'passages': {
 			'A': {
 				'text': "<p>Te mueves enérgicamente, pero notas que es imposible quitarse las ataduras. La expresión del hombre es de sorpresa al ver tu intento fallido; se detiene, abre los ojos, dibuja una &quot;o&quot; con sus labios, después de unos segundos, vuelve a sonreir.</p>",
@@ -656,7 +662,69 @@ squiffy.story.sections = {
 		},
 	},
 	'Inicio': {
-		'text': "<p>El hombre se postra frente a ti. Sonríe y con una reverencia majestuosa dice:</p>\n<p>-Buenas noches, mi nombre es..., bueno no creo que le importe. Pero debo decirle a usted que yo no soy de esas personas que se dejan asustar por cualquier cosa. No, señor. Soy un hombre, hecho y derecho. Más que eso, soy alguien quién inspira el miedo. Un hombre de la vida galante con la sangre fría y traicionera. Así es, una persona que tiene por pasatiempo matar personas por el simple hecho de hacerlo; sin embargo, últimamente me he olvidado de tales pasiones, debido a que no puedo controlar esta cruda sensación. Dios me protega, en verdad, Dios me protega, ya que está imagen me sigue a todos lados y no deja de atormentarme. ¡Ay de mí y de mi benevolente alma! Qué si de algo ha pecado, ha sido de asesinar, porque soy un hombre ejemplo, incluso doy limosna en misa. Si es que, siendo honestos, no hay persona como yo.</p>",
+		'text': "<p>El hombre se postra frente a ti. Sonríe y con una reverencia majestuosa dice:</p>\n<p>-Buenas noches, mi nombre es..., bueno no creo que le importe. Pero debo decirle a usted que yo no soy de esas personas que se dejan asustar por cualquier cosa. No, señor. Soy un hombre, hecho y derecho. Más que eso, soy alguien quién inspira el miedo. Un hombre de la vida galante con la sangre fría y traicionera. Así es, una persona que tiene por pasatiempo matar personas por el simple hecho de hacerlo; sin embargo, últimamente me he olvidado de tales pasiones, debido a que no puedo controlar esta cruda sensación. Dios me protega, en verdad, Dios me protega, ya que está imagen me sigue a todos lados y no deja de atormentarme. ¡Ay de mí y de mi benevolente alma! Qué si de algo ha pecado, ha sido de asesinar, porque soy un hombre ejemplo, incluso doy limosna en misa. Si es que, siendo honestos, no hay persona como yo. Las voces dentro de mi cabeza me piden a gritos que termine mi obra maestra, esa imagen en mi cabeza. Crearé el cuerpo perfecto, tu tienes una sonrisa perfecta...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Aterrado por las locuras que habla el hombre comienzas a gritar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Lo observas fijamente, intentas no mostrar emoción alguna.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Observas la habitación en la que te encuentras.</p>\n</li>\n</ul>",
+		'passages': {
+			'A': {
+				'text': "<p>Sueltas una alarido de terror. El hombre te observa, suelta una carcajada, y después de unos segundos empieza a toser grotescamente. Luego se acerca y te da una bofetada. </p>\n<p>-¡Silencio! Nos puede escuchar...No quiero que nos escuche...\n<br>\n<br>\n<b><p><em>Has perdido 1 punto de vida. Tus puntos de vida son {Health}.</em></p></b>\n<br>\n<br></p>",
+				'attributes': ["Health-=1"],
+			},
+			'B': {
+				'text': "<p>El hombre gordo te observa fijamente, luego alza las manos con magnificiencias como si agarrara de la cintura y la mano a alguien, a continuación empieza a dar pasos atrás, pasos adelante, con los ojos cerrados, por toda la habitación; pareciese que bailara al ritmo de una melodía. solo ves la silueta de aquel hombre que va y viene de entre la sombras al cículo de luz en el que te encuentras.</p>",
+			},
+			'C': {
+				'text': "<p>Giras tu cabeza alrededor, todo es oscuro, a excepción de la luz que tienes encima de tu cabeza. Aquel hombre sonrie mientras baila...es como si siguiera el ritmo de algún vals de opera. </p>",
+			},
+			'@1': {
+				'text': "<p>El hombre baila, baila...baila con magnificencia. Baila...</p>",
+			},
+			'@2': {
+				'text': "",
+				'js': function() {
+					squiffy.story.go("Escena2");
+					
+				},
+			},
+		},
+	},
+	'Escena2': {
+		'text': "<p>El hombre paró en seco, gira hacia a ti y dice:</p>\n<p>-Es hora, me están hablando. - El loco se adentra en la sombras de la habitación. Se escucha al fondo que se abre un cajón. Luego unos sonidos metálicos y, finalmente, el hombre regresa con un cuchillo de carnicero oxidado. Respira muy fuerte y parece muy ansioso.</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Le preguntas que tiene planeado hacer con el cuchillo. Intentas no vacilar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Le preguntas por su nombre.</p>\n</li>\n</ul>",
+		'passages': {
+			'A': {
+				'text': "",
+				'js': function() {
+					    squiffy.story.go("Escena3");
+				},
+			},
+			'B': {
+				'text': "<p>-¿Nombre? - El hombre suelta una carcajada, pareciese que estuviera haciendo gárgaras- Ellos me han dicho que preguntarías por mi nombre. Yo no tengo nombre. No, si tienes. No, no debo...debería saberlo...no...</p>\n<p>Parece que el hombre tiene una batalla interna. Empiezas a pensar que le falta un tornillo, ya no luce tan cuerdo. </p>",
+			},
+		},
+	},
+	'Escena3': {
+		'text': "<p>El hombre gordo sonríe ampliamente, mostrando su dentadura perfecta, tan perfecta que te resulta antinatural, surreal. Te apunta con el cuchillo y dice:</p>\n<p>-Tu serás el indicado. Si, señor, usted, buen hombre, ha sido elegido por ellos. Tiene que ser como ellos, mejor que ellos...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Preguntas: &quot;¿De que me hablas?&quot;.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Exclamas: &quot;Eres un enfermo&quot;. Luego le escupes.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Le sigues el juego: &quot;¿Mejor que quiénes?&quot;.</p>\n</li>\n</ul>",
+		'passages': {
+			'A': {
+				'text': "<p>-¿Quieres ver? - pregunta, y sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado. </p>",
+				'js': function() {
+					      squiffy.story.go("Escena4");
+					      
+				},
+			},
+			'B': {
+				'text': "<p>Tu escupitajo alcanzo uno de sus zapatos.</p>\n<p>-¡¿Que?! - Su rostro se deforma terriblemente en un arrebato de ira - ¡¿Como te atreves a insultarme de esta forma?! ¡Tú que eres mi ser perfecto!</p>\n<p>El hombre gordo se acerca y te encaja el cuchillo en una pierna. Sueltas un alarido de dolor.</p>\n<p>-¡Ellos pensaban igual que tú! - Exclama mientras saca, sin remordimiento, el cuchillo.</p>\n<p>Casi te desmayas, pero por alguna razón la adrenalina y el pánico generado te mantiene despierto...tú odio hacia aquel ser repugnante ha despertado, pero tienes más miedo a no saber que será de ti si te quedas inconciente.\n<br>\n<br>\n<b><p><em>Has perdido 1 punto de vida. Tus puntos de vida son {Health}.</em></p></b></p>",
+				'attributes': ["Health-=1"],
+			},
+			'C': {
+				'text': "<p>De repente, el maníaco se torna nervioso e inseguro...</p>\n<p>-Aquellos...los de la sonrisa - dice con cierto temor - Ellos me hablan, siempre me exigen más y más, caballero. No puedo decirles que no. Si me negara acabarían conmigo y mi dulce Marian. Eres el ser perfecto, eres empático, a pesar de todo...creo que te presentaré a Marian. Sí, ella es buena, ya verás...</p>\n<p>El hombre sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado. </p>",
+				'js': function() {
+					    squiffy.story.go("Escena4");
+					    
+				},
+			},
+		},
+	},
+	'Escena4': {
+		'text': "<p>lolol</p>",
 		'passages': {
 		},
 	},

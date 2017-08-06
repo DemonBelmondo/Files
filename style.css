@@ -51,9 +51,14 @@ div#squiffy-container { text-align: justify; }
 
 body
 {
-    background: url("cellbackground3.png");
+    background: url("cellbackground.png");
     background-repeat: repeat;
     background-color:black;
     color: white
 
 }
+
+
+
+
+
