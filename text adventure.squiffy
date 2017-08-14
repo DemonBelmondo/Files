@@ -6,7 +6,7 @@
 [[start]]:
 
 <audio
-  src="gamebook.ogg"
+  src="night2.mp3"
   autoplay>
   Your browser does not support the <code>audio</code> element.
 </audio>
@@ -16,37 +16,96 @@
 <img src="smilingg.png">
 </div> 
 
-Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones que afectarán el juego. 
-
-Si tus puntos de vida llegan a 0, entonces habrás perdido. 
-
+@set score = 0
 @set Health = 5
-<b><p><em>Tus puntos de vida son {Health}</em></p></b>
+@set Llave = 0
+
+<div align="center"><b><p><em>ELIGE UN CAPÍTULO</em></p></b></div>
 
 <div align="center">
-[Empezar]
+[Capítulo 1](Empezar)<br>
+<br> 
 </div> 
-[Empezar]:
 
-    setTimeout(function(){
+<div align="center">
+[Capítulo 2](Muypronto)<br>
+<br> 
+</div> 
+<div align="center">
+[Capítulo 3](Muypronto)<br>
+<br> 
+</div> 
+<div align="center">
+[Capítulo 4](Muypronto)<br>
+<br> 
+</div> 
+<div align="center">
+[Capítulo 5](Muypronto)<br>
+<br> 
+</div> 
+
+<div align="center"><b><p><em>INSTRUCCIONES</em></p></b></div>
+<div align="center">
+
+[Cómo se juega](Modo)<br>
+<br> 
+</div> 
+
+<div align="center"><b><p><em>ABOUT</em></p></b></div>
+<div align="center">
+<div align="center"><p><em>QugenBooks 2017</em></p></div>
+
+
+
+[Empezar]:
+@clear
+       
+
+    setTimeout(function(){ 
        squiffy.story.go("Capitulo1");
-    },5000);
+    },1000);
+     
+    
+  
+    
+    
         
+
+[Muypronto]:
+Pronto la actualización para jugar este capítulo. ¡Comparte esta app y dale 5 estrellas, si fue de tu agrado! Eso nos sería de mucha ayuda.<br>
+-QugenBooks
+
+[Modo]:
+<div align="justify"><b><p><em>"Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...¿crees que podrás sobrevivir?"</em></p></b></div>
+
+Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones para poder avanzar durante la partida.<br> 
+Cada decisión tomada te dará puntos (Score).<br>
+Tus puntos de vida iniciales son 5 (Puntos de vida).<br>
+¡Cuidado! Tu cordura puede jugarte malas pasadas (Locura).<br>
+Si pierdes presiona en la parte superior del texto reiniciar para volver a empezar (Restart - Reiniciar Partida).<br>
+
+Los capítulos se irán agregando paulatinamente. Lo mejor que puedes hacer para apoyar este proceso apoyando la app, compartiendo y dando 5 estrellas. Esto ayudara mucho en agilizar al update del resto del juego.
+<div align="justify">
+
+[About]:
+QugenBooks 2017
+
 
 [[Capitulo1]]:
 @clear
                 
 
 <audio
-  src="resident.mp3"
+  src="haba.mp3"
   autoplay>
   <loop>
   Your browser does not support the <code>audio</code> element.
 </audio>
 
-<h1>El cadaver sonriente</h1>
+<div align="center"><b><p><em><h1>El cadaver<br>sonriente</h1></em></p></b></div>
+<div align="center">
 
-<h2>Capítulo 1</h2>
+<div align="justify"><h2>Capítulo 1</h2><div align="justify">
 
 Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...
 
@@ -57,25 +116,34 @@ Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos at
 * [C] Le preguntas "¿Quién eres?".
 
 [A]:
-Te mueves enérgicamente, pero notas que es imposible quitarse las ataduras. La expresión del hombre es de sorpresa al ver tu intento fallido; se detiene, abre los ojos, dibuja una "o" con sus labios, después de unos segundos, vuelve a sonreir.
+<div align="justify">
+Te mueves enérgicamente, pero notas que es imposible quitarse las ataduras. La expresión del hombre es de sorpresa al ver tu intento fallido; se detiene, abre los ojos, dibuja una "o" con sus labios, después de unos segundos, vuelve a sonreir.<div align="justify">
+
+@inc score 10
 
 [B]:
-El hombre gordo lleva un mandil blanco, muy sucio, su aspecto es desaliñado; sus gordas mejillas casi le cubren los ojos; su sonrisa, blanca, impecable...desentona con su aspecto y lo vuelve inquietante; viste con una camisa blanca, un pantalón y zapatos negros.
+<div align="justify">
+El hombre gordo lleva un mandil blanco, muy sucio, su aspecto es desaliñado; sus gordas mejillas casi le cubren los ojos; su sonrisa, blanca, impecable...desentona con su aspecto y lo vuelve inquietante; viste con una camisa blanca, un pantalón y zapatos negros.<div align="justify">
 
 [C]:
 El hombre no da ninguna respuesta.
 
+@inc score 20
+
 [@1]:
 El hombre continua acercándose lentamente.
+
+@inc score 30
 
 [@2]:
 
     squiffy.story.go("Inicio");
 
 [[Inicio]]:
+<div align="justify">
 El hombre se postra frente a ti. Sonríe y con una reverencia majestuosa dice:
 
--Buenas noches, mi nombre es..., bueno no creo que le importe. Pero debo decirle a usted que yo no soy de esas personas que se dejan asustar por cualquier cosa. No, señor. Soy un hombre, hecho y derecho. Más que eso, soy alguien quién inspira el miedo. Un hombre de la vida galante con la sangre fría y traicionera. Así es, una persona que tiene por pasatiempo matar personas por el simple hecho de hacerlo; sin embargo, últimamente me he olvidado de tales pasiones, debido a que no puedo controlar esta cruda sensación. Dios me protega, en verdad, Dios me protega, ya que está imagen me sigue a todos lados y no deja de atormentarme. ¡Ay de mí y de mi benevolente alma! Qué si de algo ha pecado, ha sido de asesinar, porque soy un hombre ejemplo, incluso doy limosna en misa. Si es que, siendo honestos, no hay persona como yo. Las voces dentro de mi cabeza me piden a gritos que termine mi obra maestra, esa imagen en mi cabeza. Crearé el cuerpo perfecto, tu tienes una sonrisa perfecta...
+-Buenas noches, mi nombre es..., bueno no creo que le importe. Pero debo decirle a usted que yo no soy de esas personas que se dejan asustar por cualquier cosa. No, señor. Soy un hombre, hecho y derecho. Más que eso, soy alguien quién inspira el miedo. Un hombre de la vida galante con la sangre fría y traicionera. Así es, una persona que tiene por pasatiempo matar personas por el simple hecho de hacerlo; sin embargo, últimamente me he olvidado de tales pasiones, debido a que no puedo controlar esta cruda sensación. Dios me protega, en verdad, Dios me protega, ya que está imagen me sigue a todos lados y no deja de atormentarme. ¡Ay de mí y de mi benevolente alma! Qué si de algo ha pecado, ha sido de asesinar, porque soy un hombre ejemplo, incluso doy limosna en misa. Si es que, siendo honestos, no hay persona como yo. Las voces dentro de mi cabeza me piden a gritos que termine mi obra maestra, esa imagen en mi cabeza. Crearé el cuerpo perfecto, tu tienes una sonrisa perfecta...<div align="justify">
 
 * [A] Aterrado por las locuras que habla el hombre comienzas a gritar.
 
@@ -84,7 +152,8 @@ El hombre se postra frente a ti. Sonríe y con una reverencia majestuosa dice:
 * [C] Observas la habitación en la que te encuentras.
 
 [A]:
-Sueltas una alarido de terror. El hombre te observa, suelta una carcajada, y después de unos segundos empieza a toser grotescamente. Luego se acerca y te da una bofetada. 
+<div align="justify">
+Sueltas una alarido de terror. El hombre te observa, suelta una carcajada, y después de unos segundos empieza a toser grotescamente. Luego se acerca y te da una bofetada.<div align="justify"> 
 
 -¡Silencio! Nos puede escuchar...No quiero que nos escuche...
 <br>
@@ -93,17 +162,22 @@ Sueltas una alarido de terror. El hombre te observa, suelta una carcajada, y des
 <b><p><em>Has perdido 1 punto de vida. Tus puntos de vida son {Health}.</em></p></b>
 <br>
 <br>
-
+@inc score 5
 
 [B]:
-El hombre gordo te observa fijamente, luego alza las manos con magnificiencias como si agarrara de la cintura y la mano a alguien, a continuación empieza a dar pasos atrás, pasos adelante, con los ojos cerrados, por toda la habitación; pareciese que bailara al ritmo de una melodía. solo ves la silueta de aquel hombre que va y viene de entre la sombras al cículo de luz en el que te encuentras.
+<div align="justify">
+El hombre gordo te observa fijamente, luego alza las manos con magnificiencias como si agarrara de la cintura y la mano a alguien, a continuación empieza a dar pasos atrás, pasos adelante, con los ojos cerrados, por toda la habitación; pareciese que bailara al ritmo de una melodía. solo ves la silueta de aquel hombre que va y viene de entre la sombras al círculo de luz en el que te encuentras.<div align="justify">
 
+@inc score 20
 
 [C]:
-Giras tu cabeza alrededor, todo es oscuro, a excepción de la luz que tienes encima de tu cabeza. Aquel hombre sonrie mientras baila...es como si siguiera el ritmo de algún vals de opera. 
+<div align="justify">
+Giras tu cabeza alrededor, todo es oscuro, a excepción de la luz que tienes encima de tu cabeza. Aquel hombre sonrie y empieza a bailar...es como si siguiera el ritmo de algún vals de opera. <div align="justify">
+
+@inc score 30
 
 [@1]:
-El hombre baila, baila...baila con magnificencia. Baila...
+El hombre está parado enfrente de ti.
 
 [@2]:
 
@@ -111,28 +185,35 @@ El hombre baila, baila...baila con magnificencia. Baila...
     
 
 [[Escena2]]:
+<div align="justify">
 El hombre paró en seco, gira hacia a ti y dice:
 
--Es hora, me están hablando. - El loco se adentra en la sombras de la habitación. Se escucha al fondo que se abre un cajón. Luego unos sonidos metálicos y, finalmente, el hombre regresa con un cuchillo de carnicero oxidado. Respira muy fuerte y parece muy ansioso.
+-Es la hora, me llaman...- El loco se adentra en la sombras de la habitación. Se escucha al fondo que se abre un cajón. Luego unos sonidos metálicos y, finalmente, el hombre regresa con un cuchillo de carnicero oxidado. Respira muy fuerte y parece muy ansioso.<div align="justify">
 
 * [A] Le preguntas que tiene planeado hacer con el cuchillo. Intentas no vacilar.
+
+
 
 * [B] Le preguntas por su nombre.
 
 
 [A]:
+@inc score 10
         squiffy.story.go("Escena3");
 
 
 [B]:
+@inc score 30
+<div align="justify">
 -¿Nombre? - El hombre suelta una carcajada, pareciese que estuviera haciendo gárgaras- Ellos me han dicho que preguntarías por mi nombre. Yo no tengo nombre. No, si tienes. No, no debo...debería saberlo...no...
 
-Parece que el hombre tiene una batalla interna. Empiezas a pensar que le falta un tornillo, ya no luce tan cuerdo. 
+Parece que el hombre tiene una batalla interna. Empiezas a pensar que le falta un tornillo, ya no luce tan cuerdo. <div align="justify">
 
 [[Escena3]]:
+<div align="justify">
 El hombre gordo sonríe ampliamente, mostrando su dentadura perfecta, tan perfecta que te resulta antinatural, surreal. Te apunta con el cuchillo y dice:
 
--Tu serás el indicado. Si, señor, usted, buen hombre, ha sido elegido por ellos. Tiene que ser como ellos, mejor que ellos...
+-Tu serás el indicado. Si, señor, usted, buen hombre, ha sido elegido por ellos. Tiene que ser como ellos, mejor que ellos...<div align="justify">
 
 * [A] Preguntas: "¿De que me hablas?".
 
@@ -141,36 +222,628 @@ El hombre gordo sonríe ampliamente, mostrando su dentadura perfecta, tan perfec
 * [C] Le sigues el juego: "¿Mejor que quiénes?".
 
 [A]:
+@inc score 30
           squiffy.story.go("Escena4");
-          
--¿Quieres ver? - pregunta, y sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado. 
+<div align="justify">          
+-¿Quieres ver? - pregunta, y sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado. <div align="justify">
 
      
 [B]:
+@inc score 40
+<div align="justify">
 Tu escupitajo alcanzo uno de sus zapatos.
-
+        
 -¡¿Que?! - Su rostro se deforma terriblemente en un arrebato de ira - ¡¿Como te atreves a insultarme de esta forma?! ¡Tú que eres mi ser perfecto!
 
 El hombre gordo se acerca y te encaja el cuchillo en una pierna. Sueltas un alarido de dolor.
 
 -¡Ellos pensaban igual que tú! - Exclama mientras saca, sin remordimiento, el cuchillo.
 
-Casi te desmayas, pero por alguna razón la adrenalina y el pánico generado te mantiene despierto...tú odio hacia aquel ser repugnante ha despertado, pero tienes más miedo a no saber que será de ti si te quedas inconciente.
+Casi te desmayas, pero por alguna razón la adrenalina y el pánico generado te mantiene despierto...tú odio hacia aquel ser repugnante ha despertado, pero tienes más miedo a no saber que será de ti si te quedas inconciente.<div align="justify">
 <br>
 <br>
 @dec Health 
 <b><p><em>Has perdido 1 punto de vida. Tus puntos de vida son {Health}.</em></p></b>
 
 [C]:
+@inc score 25
         squiffy.story.go("Escena4");
-        
-De repente, el maníaco se torna nervioso e inseguro...
-
--Aquellos...los de la sonrisa - dice con cierto temor - Ellos me hablan, siempre me exigen más y más, caballero. No puedo decirles que no. Si me negara acabarían conmigo y mi dulce Marian. Eres el ser perfecto, eres empático, a pesar de todo...creo que te presentaré a Marian. Sí, ella es buena, ya verás...
-
-El hombre sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado. 
-
         
 
 [[Escena4]]:
-lolol
+@clear
+       
+<audio
+  src="menu.mp3"
+  autoplay>
+  <loop>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+<div align="justify">
+De repente, el maníaco se torna nervioso e inseguro...
+
+-Aquellos...los de la sonrisa - dice con cierto temor - Ellos me hablan, siempre me exigen más y más... No puedo decirles que no. Si me negara acabarían conmigo y mi dulce Marian. Eres el ser perfecto, eres empático, a pesar de todo...creo que te presentaré a Marian. Sí, ella es buena, ya verás...
+
+El hombre sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado.<div align="justify"> 
+
+* [A] Gritas aún más fuerte. No sabes de lo que es capaz el hombre.
+
+* [B] Te mueves bruscamente de izquierda a derecha en la silla, quieres caer al suelo.
+
+* [C] Te quedas inmutable y perplejo. No crees que haya una salida.
+
+[A]:
+@inc score 5
+Nadie te escucha. La habitación continúa en un silencio mortuorio.       
+
+[B]:
+@inc score 30
+        squiffy.story.go("Escena5");
+
+
+[C]:
+       @set Locura = 0
+       @inc Locura
+<div align="justify">       
+Te sientes desolado, quieres creer que no estas teniendo una alucinación. En tu mente algo ha hecho ´crack´, aún así no estas dispuesto a quedarte aquí de brazos cruzados.<div align="justify"> <br>
+<br>
+<b><p><em>Has ganado 1 punto de locura. Tus puntos de locura son {Locura}.</em></p></b>
+
+
+[[Escena5]]:
+Consigues caer al suelo cerca del cuchillo. A lo lejos, escuchas pasos.
+
+* [A] Te quedas paralizado. Sabes que cualquier movimiento en falso es peligroso.
+
+* [B] Alcanzas el cuchillo con tu mano derecha.
+
+[A]:
+@inc score 30
+        squiffy.story.go("Escena5.5");
+    
+
+[B]:
+        squiffy.story.go("Escena5.6");
+
+
+[[Escena5.6]]:
+<div align="justify">
+Una vez que agarras el cuchillo de alguna manera consigues introducirlo por debajo de la atadura y empiezas a cortar con desesperación. Sin embargo, cuando estabas a punto de terminar el hombre ha entrado por la puerta.
+
+-¡¿Qué haces?! - exclama colocando sus manos en la cabeza - Debí hacer caso, Gulli debío obedecer a las voces...- Su mirada se inyecta en sangre y se mueve lo más rápido que puede hacia a ti - Ahora verás, animal inmundo, nadie engaña a Gulli.
+
+Te arranca el cuchillo de la mano y lo arroja al suelo. Luego te comienza a golpear la cara con mucha rabia, es muy doloroso...quedas inconciente.<div align="justify">
+ @dec Health 
+ @dec Health
+ <br>
+ <br>
+<b><p><em>Has perdido 2 puntos de vida. Tus puntos de vida son {Health}.</em></p></b>
+<br>
+ <br>
+ <div align="justify">
+Despiertas, no sabes cuanto tiempo has estado inconciente. Puedes ver el cuchillo aún en el suelo. Escuchas pasos a lo lejos.<div align="justify">
+
+* [A] Te quedas paralizado. Sabes que cualquier movimiento en falso es peligroso.
+
+* [B] Alcanzas el cuchillo con tu mano derecha.
+
+[A]:
+@inc score 20
+        squiffy.story.go("Escena5.5");
+
+[B]:
+@clear
+       
+<audio
+  src="gameover.ogg"
+  autoplay>
+  <loop>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+ @dec score 50   
+ <div align="justify">
+Una vez que agarras el cuchillo de alguna manera consigues introducirlo por debajo de la atadura y empiezas a cortar con desesperación. Sin embargo, cuando estabas a punto de terminar el hombre ha entrado por la puerta.
+
+-¡¿Qué haces?! - exclama colocando sus manos en la cabeza -¡Otra vez engañando a Gulli!- Su mirada se inyecta en sangre y se mueve lo más rápido que puede hacia a ti - Ahora verás, ya es hora.
+
+Te arranca el cuchillo de la mano. Lo alza por encima de su cabeza. Sabes que es el final.<div align="justify">
+
+<div align="center"><b><p><em>FIN DEL JUEGO</em></p></b></div>
+<div align="center"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>
+
+
+[[Escena5.5]]:
+<div align="justify">
+Intentas no mover un músculo, solo ves que el hombre atraviesa el pasillo de un lado a otro. Ni siquiera se ha asomado por la puerta para echarte un vistazo.  
+
+Ya no escuchas pasos, solo la voz del hombre en la lejanía que dice:
+
+-Gulli, ¿donde has dejado a Marian? Eres muy distraído, Gulli...tu amada, Gulli<div align="justify">
+
+* [A] Te quedas paralizado. Sabes que cualquier movimiento en falso es peligroso.
+
+* [B] Alcanzas el cuchillo con tu mano derecha.
+
+[A]:
+@dec score 50
+        squiffy.story.go("Escena5.5.1");
+
+[B]:
+@inc score 30
+        squiffy.story.go("Escena6");      
+
+[[Escena5.5.1]]:
+
+Ya no escuchas absolutamente nada. No hay pasos, no hay voces...
+
+* [A] Te quedas paralizado. Sabes que cualquier movimiento en falso es peligroso.
+
+* [B] Alcanzas el cuchillo con tu mano derecha.
+
+[A]:
+@dec score 30
+        squiffy.story.go("Escena5.5.1");
+
+[B]:
+@inc score 30
+        squiffy.story.go("Escena6");          
+        
+
+[[Escena6]]:
+<div align="justify">
+Una vez que agarras el cuchillo de alguna manera consigues introducirlo por debajo de la atadura y empiezas a cortar con desesperación. Consigues liberar una mano y en cuestión de segundos estás de pie, un poco adolorido, pero te revitalizas solo de pensar que ese maníaco anda suelto. Estás listo para salir de este antro. Das un par de pasos hacia la puerta...no viene nadie. Arrojas el cuchillo al suelo. Ahora sin luz que te vislumbre puedes ver un poco mejor el lugar. <div align="justify">
+
+* [A] Observar la habitación detenidamente.
+
+* [B] Ir a pasillo.
+
+[A]:
+@inc score 5
+        squiffy.story.go("Observarcuarto");
+
+[B]:
+@inc score 5
+        squiffy.story.go("EscenaPasillo");     
+
+[[Observarcuarto]]:
+
+En la habitación hay:<br>
+[Un viejo congelador] | [TV vieja] | [Sierras y cuchillos] | [Ventanilla] | [Casillero]
+
+Ir a:<br>
+[[Pasillo]](EscenaPasillo)
+
+[Un viejo congelador]:
+<div align="justify">
+Hay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, tal vez puedes [Abrir el congelador] para ver si hay algo útil.<div align="justify">
+
+[Abrir el congelador]:
+<div align="justify">
+Al abrirlo, una densa neblina emana, al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align="justify">
+     @set Locura = 0
+     @inc Locura
+<br>
+<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b>
+
+[TV vieja]:
+<div align="justify">
+A tu izquierda hay un mueble con una TV vieja. Tal vez, las noticias ya están hablando de tu desaparición, ¿quieres [Encenderla]?<div align="justify">
+
+[Encenderla]:
+<div align="justify">
+Al presionar el switch de encendido, un sonido ensordecedor sale de la pantalla, no hay señal. <div align="justify">
+
+A lo lejos escuchas pasos. No fue una buena idea encender el televisor.
+
+* [A] Esconderse en el casillero.
+
+* [B] Te escondes debajo de la mesa.
+
+[A]:
+    squiffy.story.go("CasilleroL");
+
+[B]:
+     squiffy.story.go("CasilleroD");
+    
+
+[Sierras y cuchillos]:
+<div align="justify">
+Una mesa a tu izquierda te da escalofrios, esta llena de sierras y cuchillos, algunos manchados con líquido rojo oscuro. Necesitas algo con que defenderte, el [Machete] parece una buena opción para defenderse. Hay un cajón semiabierto, parece que es aquel que el hombre gordo abrió. Tal vez deberías [Abrir el cajón].<div align="justify">
+
+[Machete]:
+<div align="justify">
+Cuando estabas a punto de tomarlo, alejas tu mano. No te sientes cómodo con esto. La violencia no es lo tuyo, no sabrías que hacer con el arma.<div align="justify">
+
+[Abrir el cajón]:
+Encuentras una [nota] y una [[llave]](Observar1).
+
+[nota]:
+<div align="justify">
+Puedes leer en la nota "Gulli nunca duerme, Gulli trabaja siempre, Gulli quiere complacer a las voces...Gulli necesita más cuerpos para trabajar...".<div align="justify">
+
+[llave]:
+Has tomado la llave. Para algo tiene que servir, puede ser la clave para escapar de aquí.
+ <br>
+ <br>
+<b><p><em>Has obtenido "Llave".</em></p></b>
+@set Llave=1
+
+[Ventanilla]:
+<div align="justify">
+Una ventanilla ya hace encima de la mesa con sierras y cuchillos a tu izquierda, estás en un sótano. Además, esta reforzada con barrotes de metal. No tienes tiempo para intentar salir por ahí.<div align="justify">
+
+[Casillero]:
+<div align="justify">
+Un casillero de metal oxidado al derecha del congelador. Su puerta esta abierta, no tiene nada en su interior más que suciedad.<div align="justify">
+
+[[CasilleroL]]:
+         var rnd = Math.ceil(Math.random() * 3);    // random number between 1 and 3
+         
+    squiffy.set("rnd",rnd); 
+    
+{if rnd=3:[[* Continuar...]](Findeljuegoc)} {else:[[* Continuar...]](Observar2)}
+        
+
+[[CasillerD]]:
+<div align="justify">
+Te has escondido debajo de la mesa. El hombre gordo a entrado y te ha visto.
+
+-Has faltado a la confianza de Gulli - Te estira del pie bruscamente y te saca -. Ellos estan molestos, ha llegado la hora.<div align="justify">
+
+<div align="center"><b><p><em>FIN DEL JUEGO</em></p></b></div>
+<div align="center"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>
+
+[[Findeljuego]]:
+@clear
+       
+<audio
+  src="gameover.ogg"
+  autoplay>
+  <loop>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+<div align="center"><b><p><em>FIN DEL JUEGO</em></p></b></div>
+<div align="center"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>
+
+[[Findeljuegoc]]:
+@clear
+       
+<audio
+  src="gameover.ogg"
+  autoplay>
+  <loop>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+Te has escondido en el casillero, pero el hombre gordo ha mirado por la rendija, se aleja por un instante...luego, regresa corriendo y abre la puerta del casillero. Tu fin ha llegado.
+<div align="center"><b><p><em>FIN DEL JUEGO</em></p></b></div>
+<div align="center"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>
+
+
+
+
+
+
+[[Observar1]]:
+Has tomado la llave. Para algo tiene que servir, puede ser la clave para escapar de aquí.
+ <br>
+ <br>
+<b><p><em>Has obtenido "Llave".</em></p></b>
+@set Llave=1
+
+En la habitación hay:<br>
+[Un viejo congelador] | [TV vieja] | [Sierras y cuchillos] | [Ventanilla] | [Casillero]
+
+Ir a:<br>
+[[Pasillo]](EscenaPasillo3)
+
+[Un viejo congelador]:
+<div align="justify">
+Hay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, tal vez puedes [Abrir el congelador] para ver si hay algo útil.<div align="justify">
+
+[Abrir el congelador]:
+<div align="justify">
+Al abrirlo, una densa neblina emana, al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align="justify">
+     @set Locura = 0
+     @inc Locura
+<br>
+<b><p><em>Has ganado 1 punto de locura. Tus puntos de locura son {Locura}.</em></p></b>
+
+[TV vieja]:
+A tu izquierda hay un mueble con una TV vieja. Tal vez, las noticias ya están hablando de tu desaparición, ¿quieres [Encenderla]?
+
+[Encenderla]:
+<div align="justify">
+Al presionar el switch de encendido, un sonido ensordecedor sale de la pantalla, no hay señal. <div align="justify">
+
+A lo lejos escuchas pasos. No fue una buena idea encender el televisor.
+
+* [A] Esconderse en el casillero.
+
+* [B] Te escondes debajo de la mesa.
+
+[A]:
+    squiffy.story.go("CasilleroL");
+
+[B]:
+     squiffy.story.go("CasilleroD");
+    
+
+[Sierras y cuchillos]:
+<div align="justify">
+Una mesa a tu izquierda te da escalofrios, esta llena de sierras y cuchillos, algunos manchados con líquido rojo oscuro. Necesitas algo con que defenderte, el [Machete] parece una buena opción para defenderse. Hay un cajón semiabierto, parece que es aquel que el hombre gordo abrió. Tal vez deberías [Abrir el cajón].<div align="justify">
+
+[Machete]:
+<div align="justify">
+Cuando estabas a punto de tomarlo, alejas tu mano. No te sientes cómodo con esto. La violencia no es lo tuyo, no sabrías que hacer con el arma.<div align="justify">
+
+[Abrir el cajón]:
+Abres el cajón, nuevamente. Solo ves que hay una [nota].
+
+[nota]:
+Puedes leer en la nota 
+
+
+[Ventanilla]:
+<div align="justify">
+Una ventanilla ya hace encima de la mesa con sierras y cuchillos a tu izquierda, estás en un sótano. Además, esta reforzada con barrotes de metal. No tienes tiempo para intentar salir por ahí.<div align="justify">
+
+[Casillero]:
+Un casillero de metal oxidado al derecha del congelador. Su puerta esta abierta, no tiene nada en su interior más que suciedad.
+
+[[CasilleroL]]:
+         var rnd = Math.ceil(Math.random() * 3);    // random number between 1 and 3
+         
+    squiffy.set("rnd",rnd); 
+    
+{if rnd=3:[[* Continuar...]](Findeljuegoc)} {else:[[* Continuar...]](Observar2)}
+        
+
+[[CasillerD]]:
+<div align="justify">
+Te has escondido debajo de la mesa. El hombre gordo a entrado y te ha visto.
+
+-Has faltado a la confianza de Gulli - Te estira del pie bruscamente y te saca -. Ellos estan molestos, ha llegado la hora.<div align="justify">
+
+<div align="center"><b><p><em>FIN DEL JUEGO</em></p></b></div>
+<div align="center"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>
+
+
+
+
+
+
+[[Observar2]]:
+<div align="justify">
+El hombre que hace llamar Gulli, ha pasado a un lado del casillero. Al no verte atado a la silla, ha soltado un alarido pavoroso y ha salido corriendo por el pasillo.<div align="justify">
+
+En la habitación hay:<br>
+[Un viejo congelador] | [TV vieja] | [Sierras y cuchillos] | [Ventanilla] | [Casillero]
+
+Ir a:<br>
+[[Pasillo]](EscenaPasillo3)
+
+[Un viejo congelador]:
+<div align="justify">
+Hay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, tal vez puedes [Abrir el congelador] para ver si hay algo útil.<div align="justify">
+
+[Abrir el congelador]:
+<div align="justify">
+Al abrirlo, una densa neblina emana, al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align="justify">
+     @set Locura = 0
+     @inc Locura
+<br>
+<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b>
+
+[TV vieja]:
+<div align="justify">
+A tu izquierda hay un mueble con una TV vieja. Tal vez, las noticias ya están hablando de tu desaparición, mejor no encenderla...ya no...<div align="justify">
+
+[Sierras y cuchillos]:
+<div align="justify">
+Una mesa a tu izquierda te da escalofrios, esta llena de sierras y cuchillos, algunos manchados con líquido rojo oscuro. Necesitas algo con que defenderte, el [Machete] parece una buena opción para defenderse. Hay un cajón semiabierto, parece que es aquel que el hombre gordo abrió. No ves nada interesante. [Abrir el cajón]<div align="justify">
+
+[Machete]:
+<div align="justify">
+Cuando estabas a punto de tomarlo, alejas tu mano. No te sientes cómodo con esto. La violencia no es lo tuyo, no sabrías que hacer con el arma.<div align="justify">
+
+[Abrir el cajón]:
+Abres el cajón.<br>       
+        {if Llave=1:* [[A]](Habitaciónf) No hay nada más...} {else:* [[A]](Observar2) Ves una llave, la agarras...}      
+
+[nota]:
+<div align="justify">
+Puedes leer en la nota "Gulli nunca duerme, Gulli trabaja siempre, Gulli quiere complacer a las voces...Gulli necesita más cuerpos para trabajar...".<div align="justify">
+
+[Ventanilla]:
+<div align="justify">
+Una ventanilla ya hace encima de la mesa con sierras y cuchillos a tu izquierda, estás en un sótano. Además, esta reforzada con barrotes de metal. No tienes tiempo para intentar salir por ahí.<div align="justify">
+
+[Casillero]:
+<div align="justify">
+Un casillero de metal oxidado al derecha del congelador. Su puerta esta abierta, no tiene nada en su interior más que suciedad.<div align="justify">
+
+
+
+
+
+[[Habitaciónf]]:<div align="justify">
+Has tomado la llave. Para algo tiene que servir, puede ser la clave para escapar de aquí.
+ <div align="justify">
+ <br>
+<b><p><em>Has obtenido "Llave".</em></p></b>
+
+En la habitación hay:<br>
+[Un viejo congelador] | [TV vieja] | [Sierras y cuchillos] | [Ventanilla] | [Casillero]
+
+Ir a:<br>
+[[Pasillo]](EscenaPasillo3)
+
+[Un viejo congelador]:
+<div align="justify">
+Hay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, tal vez puedes [Abrir el congelador] para ver si hay algo útil.<div align="justify">
+
+[Abrir el congelador]:
+<div align="justify">
+Al abrirlo, una densa neblina emana, al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align="justify">
+     @set Locura = 0
+     @inc Locura
+<br>
+<b><p><em>Has ganado 1 punto de locura. Tus puntos de locura son {Locura}.</em></p></b>
+
+[TV vieja]:
+<div align="justify">
+A tu izquierda hay un mueble con una TV vieja. Tal vez, las noticias ya están hablando de tu desaparición, mejor no encenderla...ya no...<div align="justify">
+
+[Sierras y cuchillos]:
+<div align="justify">
+Una mesa a tu izquierda te da escalofrios, esta llena de sierras y cuchillos, algunos manchados con líquido rojo oscuro. Necesitas algo con que defenderte, el machete ya no te interesa. Hay un cajón semiabierto, parece que es aquel que el hombre gordo abrió. No hay nada más. <div align="justify">
+
+[Ventanilla]:
+<div align="justify">
+Una ventanilla ya hace encima de la mesa con sierras y cuchillos a tu izquierda, estás en un sótano. Además, esta reforzada con barrotes de metal. No tienes tiempo para intentar salir por ahí.<div align="justify">
+
+[Casillero]:
+<div align="justify">
+Un casillero de metal oxidado al derecha del congelador. Su puerta esta abierta, no tiene nada en su interior más que suciedad.<div align="justify">
+
+
+
+
+
+
+[[EscenaPasillo]]:
+<div align="justify">
+Entras con precaución al pasillo. Esta semioscuro. A tu derecha ves unos escalones que llevan a una puerta. La puerta tiene una cadena en la perilla con un gran candado. A tu izquierda hay una habitación oscura que te da escalofríos solo verla.<div align="justify">
+
+* [A] Regresar a la habitación.
+
+* [B] Ir hacia la puerta.
+
+* [C] Ir hacia la habitación oscura.
+
+
+[A]:
+@inc score 20
+    squiffy.story.go("Observarcuarto");
+
+[B]:
+@dec score 10
+¿Y para qué? No tienes una llave...
+
+[C]:
+@dec score 50
+No es buena idea, ¿y si ahí se encuentra el hombre gordo?
+        @set Locura
+        @inc Locura
+        {if Locura=4:* [[Continuar...]](danger)} {else: Sientes que un escalofrío hiela tu columna vertebral...}  
+<br>
+<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b>
+[[danger]]:
+<div align="justify">
+Caminas tembloroso hacia la habitación. Las luces encendiéndose y apagándose de manera intermitente te pone de nervios. Cuando entras, te horrorizas al ver cuerpos apilados uno encima de otro, sobre un charco de sangre, iluminados por una luz azul en la esquina de la habitación. De repente, Gulli, aparece detrás de tí y te dice:
+
+- ¡No debes estar aquí, malnacido! - exclama, luego enciende la motosierra que tiene entre las manos. Ha llegado tu fin.<div align="justify">
+
+[[Continuar...]](Findeljuego)
+
+
+
+
+[[EscenaPasillo3]]:
+<div align="justify">
+Entras con precaución al pasillo. Esta semioscuro. A tu derecha ves unos escalones que llevan a una puerta. La puerta tiene una cadena en la perilla con un gran candado. A tu izquierda hay una habitación oscura que te da escalofríos solo verla.<div align="justify">
+
+* [A] Regresar a la habitación.
+
+* [B] Ir hacia la puerta.
+
+* [C] Ir hacia la habitación oscura.
+
+
+[A]:
+@inc score 10
+    squiffy.story.go("Habitaciónf");
+
+[B]:
+@inc score 30
+    squiffy.story.go("PuertaCandado2");
+
+[C]:
+@dec score 50
+No es buena idea, ¿y si ahí se encuentra el hombre gordo?
+        @set Locura
+        @inc Locura
+        {if Locura=4:* [[Continuar...]](danger)} {else: Sientes que un escalofrío hiela tu columna vertebral...}  
+<br>
+<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b>
+
+[[danger]]:
+<div align="justify">
+Caminas tembloroso hacia la habitación. Las luces encendiéndose y apagándose de manera intermitente te pone de nervios. Cuando entras, te horrorizas al ver cuerpos apilados uno encima de otro, sobre un charco de sangre, iluminados por una luz azul en la esquina de la habitación. De repente, Gulli, aparece detrás de tí y te dice:
+
+- ¡No debes estar aquí, malnacido! - exclama, luego enciende la motosierra que tiene entre las manos. Ha llegado tu fin<div align="justify">
+
+[[Continuar...]](Findeljuego)
+
+
+[[PuertaCandado2]]:
+La puerta tiene una cadena con un enorme candado atravesado por la perilla.
+
+* [A] Regresar al pasillo.
+
+* [B] Regresar a la habitación.
+
+* [C] Quitar candado.
+
+[A]:
+@dec score 10
+    squiffy.story.go("EscenaPasillo3");
+
+[B]:
+@dec score 30
+    squiffy.story.go("Habitacionf");
+
+[C]:
+@inc score 40
+Observar el candado.<br>
+    {if Llave=1:* [[A]](FinalEpisodio) Sacas la llave de tu bolsillo y la introduces en el candado...} {else:* [[B]](PuertaCandado2) No tienes la llave...}  
+
+[[FinalEpisodio]]:
+@clear
+       
+<audio
+  src="haunt.mp3"
+  autoplay>
+  <loop>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+<div align="justify">
+Quitas el candado, cuidadosamente, y empujas la puerta. Sales del sótano, ahora estas en una habitación repletas de libros. A lo lejos escuchas pasos, parecen provenir del sótano...<div align="justify">
+
+<div align="center"><b><p><em>FIN DEL EPISODIO I</em></p></b></div>
+<div align="center"><b><p><em>Presiona continuar para conocer tu status. Y proseguir la historia. Tal vez, este es un buen momento para que descanses tu vista.</em></p></b></div>
+<br>
+[[Continuar...]](Status)
+
+[[Status1]]:
+<div align="center"><b><p><em>STATUS</em></p></b></div>
+<div align="center"><p><em>Puntos de vida: {Health}</em></p></div>
+<div align="center"><p><em>Cordura: {Locura}</em></p></div>
+<br>
+<br>
+        {if Health>3:* Te han herido, pero has sabido manejar la situación.} {else:* Has estado a punto de morir...}
+
+        {if Locura>3:* Tus nervios y cordura casi te hacen morir.} {else:* Tienes nervios de acero...}
+
+
+[[Continuar...]](start)
+
+
+
+
+
+
+
+

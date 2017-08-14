@@ -620,38 +620,56 @@ squiffy.story.sections = {
 		},
 	},
 	'start': {
-		'text': "<audio\n  src=\"gamebook.ogg\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n\n<div align=\"center\">\n<img src=\"smilingg.png\">\n</div> \n\n<p>Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones que afectarán el juego. </p>\n<p>Si tus puntos de vida llegan a 0, entonces habrás perdido. </p>\n<p><b><p><em>Tus puntos de vida son {Health}</em></p></b></p>\n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Empezar\" role=\"link\" tabindex=\"0\">Empezar</a>\n</div>",
-		'attributes': ["Health = 5"],
+		'text': "<audio\n  src=\"night2.mp3\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n\n<div align=\"center\">\n<img src=\"smilingg.png\">\n</div> \n\n\n<div align=\"center\"><b><p><em>ELIGE UN CAPÍTULO</em></p></b></div>\n\n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Empezar\" role=\"link\" tabindex=\"0\">Capítulo 1</a><br>\n<br> \n</div> \n\n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo 2</a><br>\n<br> \n</div> \n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo 3</a><br>\n<br> \n</div> \n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo 4</a><br>\n<br> \n</div> \n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo 5</a><br>\n<br> \n</div> \n\n<div align=\"center\"><b><p><em>INSTRUCCIONES</em></p></b></div>\n<div align=\"center\">\n\n<a class=\"squiffy-link link-passage\" data-passage=\"Modo\" role=\"link\" tabindex=\"0\">Cómo se juega</a><br>\n<br> \n</div> \n\n<div align=\"center\"><b><p><em>ABOUT</em></p></b></div>\n<div align=\"center\">\n<div align=\"center\"><p><em>QugenBooks 2017</em></p></div>",
+		'attributes': ["score = 0","Health = 5","Llave = 0"],
 		'passages': {
 			'Empezar': {
+				'clear': true,
 				'text': "",
 				'js': function() {
-					setTimeout(function(){
+					   
+					setTimeout(function(){ 
 					   squiffy.story.go("Capitulo1");
-					},5000);
+					},1000);
+					 
+					
+					
+					
 					    
 				},
+			},
+			'Muypronto': {
+				'text': "<p>Pronto la actualización para jugar este capítulo. ¡Comparte esta app y dale 5 estrellas, si fue de tu agrado! Eso nos sería de mucha ayuda.<br>\n-QugenBooks</p>",
+			},
+			'Modo': {
+				'text': "<div align=\"justify\"><b><p><em>&quot;Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...¿crees que podrás sobrevivir?&quot;</em></p></b></div>\n\n<p>Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones para poder avanzar durante la partida.<br> \nCada decisión tomada te dará puntos (Score).<br>\nTus puntos de vida iniciales son 5 (Puntos de vida).<br>\n¡Cuidado! Tu cordura puede jugarte malas pasadas (Locura).<br>\nSi pierdes presiona en la parte superior del texto reiniciar para volver a empezar (Restart - Reiniciar Partida).<br></p>\n<p>Los capítulos se irán agregando paulatinamente. Lo mejor que puedes hacer para apoyar este proceso apoyando la app, compartiendo y dando 5 estrellas. Esto ayudara mucho en agilizar al update del resto del juego.</p>\n<div align=\"justify\">",
+			},
+			'About': {
+				'text': "<p>QugenBooks 2017</p>",
 			},
 		},
 	},
 	'Capitulo1': {
 		'clear': true,
-		'text': "<audio\n  src=\"resident.mp3\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<h1>El cadaver sonriente</h1>\n\n<h2>Capítulo 1</h2>\n\n<p>Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Mueves tus manos desesperadamente, esperanzado a escapar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Lo observas fijamente, intentas permanecer tranquilo.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Le preguntas &quot;¿Quién eres?&quot;.</p>\n</li>\n</ul>",
+		'text': "<audio\n  src=\"haba.mp3\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<p><div align=\"center\"><b><p><em><h1>El cadaver<br>sonriente</h1></em></p></b></div></p>\n<div align=\"center\">\n\n<p><div align=\"justify\"><h2>Capítulo 1</h2><div align=\"justify\"></p>\n<p>Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Mueves tus manos desesperadamente, esperanzado a escapar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Lo observas fijamente, intentas permanecer tranquilo.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Le preguntas &quot;¿Quién eres?&quot;.</p>\n</li>\n</ul>",
 		'js': function() {
 			            
 		},
 		'passages': {
 			'A': {
-				'text': "<p>Te mueves enérgicamente, pero notas que es imposible quitarse las ataduras. La expresión del hombre es de sorpresa al ver tu intento fallido; se detiene, abre los ojos, dibuja una &quot;o&quot; con sus labios, después de unos segundos, vuelve a sonreir.</p>",
+				'text': "<p><div align=\"justify\">\nTe mueves enérgicamente, pero notas que es imposible quitarse las ataduras. La expresión del hombre es de sorpresa al ver tu intento fallido; se detiene, abre los ojos, dibuja una &quot;o&quot; con sus labios, después de unos segundos, vuelve a sonreir.<div align=\"justify\"></p>",
+				'attributes': ["score+=10"],
 			},
 			'B': {
-				'text': "<p>El hombre gordo lleva un mandil blanco, muy sucio, su aspecto es desaliñado; sus gordas mejillas casi le cubren los ojos; su sonrisa, blanca, impecable...desentona con su aspecto y lo vuelve inquietante; viste con una camisa blanca, un pantalón y zapatos negros.</p>",
+				'text': "<p><div align=\"justify\">\nEl hombre gordo lleva un mandil blanco, muy sucio, su aspecto es desaliñado; sus gordas mejillas casi le cubren los ojos; su sonrisa, blanca, impecable...desentona con su aspecto y lo vuelve inquietante; viste con una camisa blanca, un pantalón y zapatos negros.<div align=\"justify\"></p>",
 			},
 			'C': {
 				'text': "<p>El hombre no da ninguna respuesta.</p>",
+				'attributes': ["score+=20"],
 			},
 			'@1': {
 				'text': "<p>El hombre continua acercándose lentamente.</p>",
+				'attributes': ["score+=30"],
 			},
 			'@2': {
 				'text': "",
@@ -662,20 +680,22 @@ squiffy.story.sections = {
 		},
 	},
 	'Inicio': {
-		'text': "<p>El hombre se postra frente a ti. Sonríe y con una reverencia majestuosa dice:</p>\n<p>-Buenas noches, mi nombre es..., bueno no creo que le importe. Pero debo decirle a usted que yo no soy de esas personas que se dejan asustar por cualquier cosa. No, señor. Soy un hombre, hecho y derecho. Más que eso, soy alguien quién inspira el miedo. Un hombre de la vida galante con la sangre fría y traicionera. Así es, una persona que tiene por pasatiempo matar personas por el simple hecho de hacerlo; sin embargo, últimamente me he olvidado de tales pasiones, debido a que no puedo controlar esta cruda sensación. Dios me protega, en verdad, Dios me protega, ya que está imagen me sigue a todos lados y no deja de atormentarme. ¡Ay de mí y de mi benevolente alma! Qué si de algo ha pecado, ha sido de asesinar, porque soy un hombre ejemplo, incluso doy limosna en misa. Si es que, siendo honestos, no hay persona como yo. Las voces dentro de mi cabeza me piden a gritos que termine mi obra maestra, esa imagen en mi cabeza. Crearé el cuerpo perfecto, tu tienes una sonrisa perfecta...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Aterrado por las locuras que habla el hombre comienzas a gritar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Lo observas fijamente, intentas no mostrar emoción alguna.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Observas la habitación en la que te encuentras.</p>\n</li>\n</ul>",
+		'text': "<p><div align=\"justify\">\nEl hombre se postra frente a ti. Sonríe y con una reverencia majestuosa dice:</p>\n<p>-Buenas noches, mi nombre es..., bueno no creo que le importe. Pero debo decirle a usted que yo no soy de esas personas que se dejan asustar por cualquier cosa. No, señor. Soy un hombre, hecho y derecho. Más que eso, soy alguien quién inspira el miedo. Un hombre de la vida galante con la sangre fría y traicionera. Así es, una persona que tiene por pasatiempo matar personas por el simple hecho de hacerlo; sin embargo, últimamente me he olvidado de tales pasiones, debido a que no puedo controlar esta cruda sensación. Dios me protega, en verdad, Dios me protega, ya que está imagen me sigue a todos lados y no deja de atormentarme. ¡Ay de mí y de mi benevolente alma! Qué si de algo ha pecado, ha sido de asesinar, porque soy un hombre ejemplo, incluso doy limosna en misa. Si es que, siendo honestos, no hay persona como yo. Las voces dentro de mi cabeza me piden a gritos que termine mi obra maestra, esa imagen en mi cabeza. Crearé el cuerpo perfecto, tu tienes una sonrisa perfecta...<div align=\"justify\"></p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Aterrado por las locuras que habla el hombre comienzas a gritar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Lo observas fijamente, intentas no mostrar emoción alguna.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Observas la habitación en la que te encuentras.</p>\n</li>\n</ul>",
 		'passages': {
 			'A': {
-				'text': "<p>Sueltas una alarido de terror. El hombre te observa, suelta una carcajada, y después de unos segundos empieza a toser grotescamente. Luego se acerca y te da una bofetada. </p>\n<p>-¡Silencio! Nos puede escuchar...No quiero que nos escuche...\n<br>\n<br>\n<b><p><em>Has perdido 1 punto de vida. Tus puntos de vida son {Health}.</em></p></b>\n<br>\n<br></p>",
-				'attributes': ["Health-=1"],
+				'text': "<p><div align=\"justify\">\nSueltas una alarido de terror. El hombre te observa, suelta una carcajada, y después de unos segundos empieza a toser grotescamente. Luego se acerca y te da una bofetada.<div align=\"justify\"> </p>\n<p>-¡Silencio! Nos puede escuchar...No quiero que nos escuche...\n<br>\n<br>\n<b><p><em>Has perdido 1 punto de vida. Tus puntos de vida son {Health}.</em></p></b>\n<br>\n<br></p>",
+				'attributes': ["Health-=1","score+=5"],
 			},
 			'B': {
-				'text': "<p>El hombre gordo te observa fijamente, luego alza las manos con magnificiencias como si agarrara de la cintura y la mano a alguien, a continuación empieza a dar pasos atrás, pasos adelante, con los ojos cerrados, por toda la habitación; pareciese que bailara al ritmo de una melodía. solo ves la silueta de aquel hombre que va y viene de entre la sombras al cículo de luz en el que te encuentras.</p>",
+				'text': "<p><div align=\"justify\">\nEl hombre gordo te observa fijamente, luego alza las manos con magnificiencias como si agarrara de la cintura y la mano a alguien, a continuación empieza a dar pasos atrás, pasos adelante, con los ojos cerrados, por toda la habitación; pareciese que bailara al ritmo de una melodía. solo ves la silueta de aquel hombre que va y viene de entre la sombras al círculo de luz en el que te encuentras.<div align=\"justify\"></p>",
+				'attributes': ["score+=20"],
 			},
 			'C': {
-				'text': "<p>Giras tu cabeza alrededor, todo es oscuro, a excepción de la luz que tienes encima de tu cabeza. Aquel hombre sonrie mientras baila...es como si siguiera el ritmo de algún vals de opera. </p>",
+				'text': "<p><div align=\"justify\">\nGiras tu cabeza alrededor, todo es oscuro, a excepción de la luz que tienes encima de tu cabeza. Aquel hombre sonrie y empieza a bailar...es como si siguiera el ritmo de algún vals de opera. <div align=\"justify\"></p>",
+				'attributes': ["score+=30"],
 			},
 			'@1': {
-				'text': "<p>El hombre baila, baila...baila con magnificencia. Baila...</p>",
+				'text': "<p>El hombre está parado enfrente de ti.</p>",
 			},
 			'@2': {
 				'text': "",
@@ -687,35 +707,38 @@ squiffy.story.sections = {
 		},
 	},
 	'Escena2': {
-		'text': "<p>El hombre paró en seco, gira hacia a ti y dice:</p>\n<p>-Es hora, me están hablando. - El loco se adentra en la sombras de la habitación. Se escucha al fondo que se abre un cajón. Luego unos sonidos metálicos y, finalmente, el hombre regresa con un cuchillo de carnicero oxidado. Respira muy fuerte y parece muy ansioso.</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Le preguntas que tiene planeado hacer con el cuchillo. Intentas no vacilar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Le preguntas por su nombre.</p>\n</li>\n</ul>",
+		'text': "<p><div align=\"justify\">\nEl hombre paró en seco, gira hacia a ti y dice:</p>\n<p>-Es la hora, me llaman...- El loco se adentra en la sombras de la habitación. Se escucha al fondo que se abre un cajón. Luego unos sonidos metálicos y, finalmente, el hombre regresa con un cuchillo de carnicero oxidado. Respira muy fuerte y parece muy ansioso.<div align=\"justify\"></p>\n<ul>\n<li><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Le preguntas que tiene planeado hacer con el cuchillo. Intentas no vacilar.</li>\n</ul>\n<ul>\n<li><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Le preguntas por su nombre.</li>\n</ul>",
 		'passages': {
 			'A': {
 				'text': "",
+				'attributes': ["score+=10"],
 				'js': function() {
 					    squiffy.story.go("Escena3");
 				},
 			},
 			'B': {
-				'text': "<p>-¿Nombre? - El hombre suelta una carcajada, pareciese que estuviera haciendo gárgaras- Ellos me han dicho que preguntarías por mi nombre. Yo no tengo nombre. No, si tienes. No, no debo...debería saberlo...no...</p>\n<p>Parece que el hombre tiene una batalla interna. Empiezas a pensar que le falta un tornillo, ya no luce tan cuerdo. </p>",
+				'text': "<p><div align=\"justify\">\n-¿Nombre? - El hombre suelta una carcajada, pareciese que estuviera haciendo gárgaras- Ellos me han dicho que preguntarías por mi nombre. Yo no tengo nombre. No, si tienes. No, no debo...debería saberlo...no...</p>\n<p>Parece que el hombre tiene una batalla interna. Empiezas a pensar que le falta un tornillo, ya no luce tan cuerdo. <div align=\"justify\"></p>",
+				'attributes': ["score+=30"],
 			},
 		},
 	},
 	'Escena3': {
-		'text': "<p>El hombre gordo sonríe ampliamente, mostrando su dentadura perfecta, tan perfecta que te resulta antinatural, surreal. Te apunta con el cuchillo y dice:</p>\n<p>-Tu serás el indicado. Si, señor, usted, buen hombre, ha sido elegido por ellos. Tiene que ser como ellos, mejor que ellos...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Preguntas: &quot;¿De que me hablas?&quot;.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Exclamas: &quot;Eres un enfermo&quot;. Luego le escupes.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Le sigues el juego: &quot;¿Mejor que quiénes?&quot;.</p>\n</li>\n</ul>",
+		'text': "<p><div align=\"justify\">\nEl hombre gordo sonríe ampliamente, mostrando su dentadura perfecta, tan perfecta que te resulta antinatural, surreal. Te apunta con el cuchillo y dice:</p>\n<p>-Tu serás el indicado. Si, señor, usted, buen hombre, ha sido elegido por ellos. Tiene que ser como ellos, mejor que ellos...<div align=\"justify\"></p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Preguntas: &quot;¿De que me hablas?&quot;.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Exclamas: &quot;Eres un enfermo&quot;. Luego le escupes.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Le sigues el juego: &quot;¿Mejor que quiénes?&quot;.</p>\n</li>\n</ul>",
 		'passages': {
 			'A': {
-				'text': "<p>-¿Quieres ver? - pregunta, y sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado. </p>",
+				'text': "<p><div align=\"justify\"><br>-¿Quieres ver? - pregunta, y sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado. <div align=\"justify\"></p>",
+				'attributes': ["score+=30"],
 				'js': function() {
 					      squiffy.story.go("Escena4");
-					      
 				},
 			},
 			'B': {
-				'text': "<p>Tu escupitajo alcanzo uno de sus zapatos.</p>\n<p>-¡¿Que?! - Su rostro se deforma terriblemente en un arrebato de ira - ¡¿Como te atreves a insultarme de esta forma?! ¡Tú que eres mi ser perfecto!</p>\n<p>El hombre gordo se acerca y te encaja el cuchillo en una pierna. Sueltas un alarido de dolor.</p>\n<p>-¡Ellos pensaban igual que tú! - Exclama mientras saca, sin remordimiento, el cuchillo.</p>\n<p>Casi te desmayas, pero por alguna razón la adrenalina y el pánico generado te mantiene despierto...tú odio hacia aquel ser repugnante ha despertado, pero tienes más miedo a no saber que será de ti si te quedas inconciente.\n<br>\n<br>\n<b><p><em>Has perdido 1 punto de vida. Tus puntos de vida son {Health}.</em></p></b></p>",
-				'attributes': ["Health-=1"],
+				'text': "<p><div align=\"justify\">\nTu escupitajo alcanzo uno de sus zapatos.</p>\n<p>-¡¿Que?! - Su rostro se deforma terriblemente en un arrebato de ira - ¡¿Como te atreves a insultarme de esta forma?! ¡Tú que eres mi ser perfecto!</p>\n<p>El hombre gordo se acerca y te encaja el cuchillo en una pierna. Sueltas un alarido de dolor.</p>\n<p>-¡Ellos pensaban igual que tú! - Exclama mientras saca, sin remordimiento, el cuchillo.</p>\n<p>Casi te desmayas, pero por alguna razón la adrenalina y el pánico generado te mantiene despierto...tú odio hacia aquel ser repugnante ha despertado, pero tienes más miedo a no saber que será de ti si te quedas inconciente.<div align=\"justify\">\n<br>\n<br>\n<b><p><em>Has perdido 1 punto de vida. Tus puntos de vida son {Health}.</em></p></b></p>",
+				'attributes': ["score+=40","Health-=1"],
 			},
 			'C': {
-				'text': "<p>De repente, el maníaco se torna nervioso e inseguro...</p>\n<p>-Aquellos...los de la sonrisa - dice con cierto temor - Ellos me hablan, siempre me exigen más y más, caballero. No puedo decirles que no. Si me negara acabarían conmigo y mi dulce Marian. Eres el ser perfecto, eres empático, a pesar de todo...creo que te presentaré a Marian. Sí, ella es buena, ya verás...</p>\n<p>El hombre sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado. </p>",
+				'text': "",
+				'attributes': ["score+=25"],
 				'js': function() {
 					    squiffy.story.go("Escena4");
 					    
@@ -724,7 +747,379 @@ squiffy.story.sections = {
 		},
 	},
 	'Escena4': {
-		'text': "<p>lolol</p>",
+		'clear': true,
+		'text': "<audio\n  src=\"menu.mp3\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<p><div align=\"justify\">\nDe repente, el maníaco se torna nervioso e inseguro...</p>\n<p>-Aquellos...los de la sonrisa - dice con cierto temor - Ellos me hablan, siempre me exigen más y más... No puedo decirles que no. Si me negara acabarían conmigo y mi dulce Marian. Eres el ser perfecto, eres empático, a pesar de todo...creo que te presentaré a Marian. Sí, ella es buena, ya verás...</p>\n<p>El hombre sin esperar una respuesta, suelta el cuchillo, y camina con una cojera hacia a las sombras de la habitación. Luego abre una puerta y sale por ella, escuchas como se aleja. Al fondo puedes divisar un pasillo iluminado.<div align=\"justify\"> </p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Gritas aún más fuerte. No sabes de lo que es capaz el hombre.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Te mueves bruscamente de izquierda a derecha en la silla, quieres caer al suelo.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Te quedas inmutable y perplejo. No crees que haya una salida.</p>\n</li>\n</ul>",
+		'js': function() {
+			   
+		},
+		'passages': {
+			'A': {
+				'text': "<p>Nadie te escucha. La habitación continúa en un silencio mortuorio.       </p>",
+				'attributes': ["score+=5"],
+			},
+			'B': {
+				'text': "",
+				'attributes': ["score+=30"],
+				'js': function() {
+					    squiffy.story.go("Escena5");
+				},
+			},
+			'C': {
+				'text': "<p><div align=\"justify\"><br>Te sientes desolado, quieres creer que no estas teniendo una alucinación. En tu mente algo ha hecho ´crack´, aún así no estas dispuesto a quedarte aquí de brazos cruzados.<div align=\"justify\"> <br>\n<br>\n<b><p><em>Has ganado 1 punto de locura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'attributes': ["Locura = 0","Locura+=1"],
+			},
+		},
+	},
+	'Escena5': {
+		'text': "<p>Consigues caer al suelo cerca del cuchillo. A lo lejos, escuchas pasos.</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Te quedas paralizado. Sabes que cualquier movimiento en falso es peligroso.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Alcanzas el cuchillo con tu mano derecha.</p>\n</li>\n</ul>",
+		'passages': {
+			'A': {
+				'text': "",
+				'attributes': ["score+=30"],
+				'js': function() {
+					    squiffy.story.go("Escena5.5");
+					
+				},
+			},
+			'B': {
+				'text': "",
+				'js': function() {
+					    squiffy.story.go("Escena5.6");
+				},
+			},
+		},
+	},
+	'Escena5.6': {
+		'text': "<p><div align=\"justify\">\nUna vez que agarras el cuchillo de alguna manera consigues introducirlo por debajo de la atadura y empiezas a cortar con desesperación. Sin embargo, cuando estabas a punto de terminar el hombre ha entrado por la puerta.</p>\n<p>-¡¿Qué haces?! - exclama colocando sus manos en la cabeza - Debí hacer caso, Gulli debío obedecer a las voces...- Su mirada se inyecta en sangre y se mueve lo más rápido que puede hacia a ti - Ahora verás, animal inmundo, nadie engaña a Gulli.</p>\n<p>Te arranca el cuchillo de la mano y lo arroja al suelo. Luego te comienza a golpear la cara con mucha rabia, es muy doloroso...quedas inconciente.<div align=\"justify\">\n <br>\n <br>\n<b><p><em>Has perdido 2 puntos de vida. Tus puntos de vida son {Health}.</em></p></b>\n<br>\n <br>\n <div align=\"justify\">\nDespiertas, no sabes cuanto tiempo has estado inconciente. Puedes ver el cuchillo aún en el suelo. Escuchas pasos a lo lejos.<div align=\"justify\"></p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Te quedas paralizado. Sabes que cualquier movimiento en falso es peligroso.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Alcanzas el cuchillo con tu mano derecha.</p>\n</li>\n</ul>",
+		'attributes': ["Health-=1","Health-=1"],
+		'passages': {
+			'A': {
+				'text': "",
+				'attributes': ["score+=20"],
+				'js': function() {
+					    squiffy.story.go("Escena5.5");
+				},
+			},
+			'B': {
+				'clear': true,
+				'text': "<audio\n  src=\"gameover.ogg\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n <div align=\"justify\">\nUna vez que agarras el cuchillo de alguna manera consigues introducirlo por debajo de la atadura y empiezas a cortar con desesperación. Sin embargo, cuando estabas a punto de terminar el hombre ha entrado por la puerta.\n\n-¡¿Qué haces?! - exclama colocando sus manos en la cabeza -¡Otra vez engañando a Gulli!- Su mirada se inyecta en sangre y se mueve lo más rápido que puede hacia a ti - Ahora verás, ya es hora.\n\nTe arranca el cuchillo de la mano. Lo alza por encima de su cabeza. Sabes que es el final.<div align=\"justify\">\n\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
+				'attributes': ["score-=50"],
+				'js': function() {
+					   
+				},
+			},
+		},
+	},
+	'Escena5.5': {
+		'text': "<p><div align=\"justify\">\nIntentas no mover un músculo, solo ves que el hombre atraviesa el pasillo de un lado a otro. Ni siquiera se ha asomado por la puerta para echarte un vistazo.  </p>\n<p>Ya no escuchas pasos, solo la voz del hombre en la lejanía que dice:</p>\n<p>-Gulli, ¿donde has dejado a Marian? Eres muy distraído, Gulli...tu amada, Gulli<div align=\"justify\"></p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Te quedas paralizado. Sabes que cualquier movimiento en falso es peligroso.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Alcanzas el cuchillo con tu mano derecha.</p>\n</li>\n</ul>",
+		'passages': {
+			'A': {
+				'text': "",
+				'attributes': ["score-=50"],
+				'js': function() {
+					    squiffy.story.go("Escena5.5.1");
+				},
+			},
+			'B': {
+				'text': "",
+				'attributes': ["score+=30"],
+				'js': function() {
+					    squiffy.story.go("Escena6");      
+				},
+			},
+		},
+	},
+	'Escena5.5.1': {
+		'text': "<p>Ya no escuchas absolutamente nada. No hay pasos, no hay voces...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Te quedas paralizado. Sabes que cualquier movimiento en falso es peligroso.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Alcanzas el cuchillo con tu mano derecha.</p>\n</li>\n</ul>",
+		'passages': {
+			'A': {
+				'text': "",
+				'attributes': ["score-=30"],
+				'js': function() {
+					    squiffy.story.go("Escena5.5.1");
+				},
+			},
+			'B': {
+				'text': "",
+				'attributes': ["score+=30"],
+				'js': function() {
+					    squiffy.story.go("Escena6");          
+					    
+				},
+			},
+		},
+	},
+	'Escena6': {
+		'text': "<p><div align=\"justify\">\nUna vez que agarras el cuchillo de alguna manera consigues introducirlo por debajo de la atadura y empiezas a cortar con desesperación. Consigues liberar una mano y en cuestión de segundos estás de pie, un poco adolorido, pero te revitalizas solo de pensar que ese maníaco anda suelto. Estás listo para salir de este antro. Das un par de pasos hacia la puerta...no viene nadie. Arrojas el cuchillo al suelo. Ahora sin luz que te vislumbre puedes ver un poco mejor el lugar. <div align=\"justify\"></p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Observar la habitación detenidamente.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Ir a pasillo.</p>\n</li>\n</ul>",
+		'passages': {
+			'A': {
+				'text': "",
+				'attributes': ["score+=5"],
+				'js': function() {
+					    squiffy.story.go("Observarcuarto");
+				},
+			},
+			'B': {
+				'text': "",
+				'attributes': ["score+=5"],
+				'js': function() {
+					    squiffy.story.go("EscenaPasillo");     
+				},
+			},
+		},
+	},
+	'Observarcuarto': {
+		'text': "<p>En la habitación hay:<br>\n<a class=\"squiffy-link link-passage\" data-passage=\"Un viejo congelador\" role=\"link\" tabindex=\"0\">Un viejo congelador</a> | <a class=\"squiffy-link link-passage\" data-passage=\"TV vieja\" role=\"link\" tabindex=\"0\">TV vieja</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Sierras y cuchillos\" role=\"link\" tabindex=\"0\">Sierras y cuchillos</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Ventanilla\" role=\"link\" tabindex=\"0\">Ventanilla</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Casillero\" role=\"link\" tabindex=\"0\">Casillero</a></p>\n<p>Ir a:<br>\n<a class=\"squiffy-link link-section\" data-section=\"EscenaPasillo\" role=\"link\" tabindex=\"0\">Pasillo</a></p>",
+		'passages': {
+			'Un viejo congelador': {
+				'text': "<p><div align=\"justify\">\nHay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, tal vez puedes <a class=\"squiffy-link link-passage\" data-passage=\"Abrir el congelador\" role=\"link\" tabindex=\"0\">Abrir el congelador</a> para ver si hay algo útil.<div align=\"justify\"></p>",
+			},
+			'Abrir el congelador': {
+				'text': "<p><div align=\"justify\">\nAl abrirlo, una densa neblina emana, al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align=\"justify\">\n<br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'attributes': ["Locura = 0","Locura+=1"],
+			},
+			'TV vieja': {
+				'text': "<p><div align=\"justify\">\nA tu izquierda hay un mueble con una TV vieja. Tal vez, las noticias ya están hablando de tu desaparición, ¿quieres <a class=\"squiffy-link link-passage\" data-passage=\"Encenderla\" role=\"link\" tabindex=\"0\">Encenderla</a>?<div align=\"justify\"></p>",
+			},
+			'Encenderla': {
+				'text': "<p><div align=\"justify\">\nAl presionar el switch de encendido, un sonido ensordecedor sale de la pantalla, no hay señal. <div align=\"justify\"></p>\n<p>A lo lejos escuchas pasos. No fue una buena idea encender el televisor.</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Esconderse en el casillero.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Te escondes debajo de la mesa.</p>\n</li>\n</ul>",
+			},
+			'A': {
+				'text': "",
+				'js': function() {
+					squiffy.story.go("CasilleroL");
+				},
+			},
+			'B': {
+				'text': "",
+				'js': function() {
+					 squiffy.story.go("CasilleroD");
+					
+				},
+			},
+			'Sierras y cuchillos': {
+				'text': "<p><div align=\"justify\">\nUna mesa a tu izquierda te da escalofrios, esta llena de sierras y cuchillos, algunos manchados con líquido rojo oscuro. Necesitas algo con que defenderte, el <a class=\"squiffy-link link-passage\" data-passage=\"Machete\" role=\"link\" tabindex=\"0\">Machete</a> parece una buena opción para defenderse. Hay un cajón semiabierto, parece que es aquel que el hombre gordo abrió. Tal vez deberías <a class=\"squiffy-link link-passage\" data-passage=\"Abrir el cajón\" role=\"link\" tabindex=\"0\">Abrir el cajón</a>.<div align=\"justify\"></p>",
+			},
+			'Machete': {
+				'text': "<p><div align=\"justify\">\nCuando estabas a punto de tomarlo, alejas tu mano. No te sientes cómodo con esto. La violencia no es lo tuyo, no sabrías que hacer con el arma.<div align=\"justify\"></p>",
+			},
+			'Abrir el cajón': {
+				'text': "<p>Encuentras una <a class=\"squiffy-link link-passage\" data-passage=\"nota\" role=\"link\" tabindex=\"0\">nota</a> y una <a class=\"squiffy-link link-section\" data-section=\"Observar1\" role=\"link\" tabindex=\"0\">llave</a>.</p>",
+			},
+			'nota': {
+				'text': "<p><div align=\"justify\">\nPuedes leer en la nota &quot;Gulli nunca duerme, Gulli trabaja siempre, Gulli quiere complacer a las voces...Gulli necesita más cuerpos para trabajar...&quot;.<div align=\"justify\"></p>",
+			},
+			'llave': {
+				'text': "<p>Has tomado la llave. Para algo tiene que servir, puede ser la clave para escapar de aquí.\n <br>\n <br>\n<b><p><em>Has obtenido &quot;Llave&quot;.</em></p></b></p>",
+				'attributes': ["Llave=1"],
+			},
+			'Ventanilla': {
+				'text': "<p><div align=\"justify\">\nUna ventanilla ya hace encima de la mesa con sierras y cuchillos a tu izquierda, estás en un sótano. Además, esta reforzada con barrotes de metal. No tienes tiempo para intentar salir por ahí.<div align=\"justify\"></p>",
+			},
+			'Casillero': {
+				'text': "<p><div align=\"justify\">\nUn casillero de metal oxidado al derecha del congelador. Su puerta esta abierta, no tiene nada en su interior más que suciedad.<div align=\"justify\"></p>",
+			},
+		},
+	},
+	'CasilleroL': {
+		'text': "<p>{if rnd=3:<a class=\"squiffy-link link-section\" data-section=\"Findeljuegoc\" role=\"link\" tabindex=\"0\"><em> Continuar...</a>} {else:<a class=\"squiffy-link link-section\" data-section=\"Observar2\" role=\"link\" tabindex=\"0\"></em> Continuar...</a>}</p>",
+		'js': function() {
+			     var rnd = Math.ceil(Math.random() * 3);    // random number between 1 and 3
+			     
+			squiffy.set("rnd",rnd); 
+			
+		},
+		'passages': {
+		},
+	},
+	'CasillerD': {
+		'text': "<div align=\"justify\">\nTe has escondido debajo de la mesa. El hombre gordo a entrado y te ha visto.\n\n-Has faltado a la confianza de Gulli - Te estira del pie bruscamente y te saca -. Ellos estan molestos, ha llegado la hora.<div align=\"justify\">\n\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
+		'passages': {
+		},
+	},
+	'Findeljuego': {
+		'clear': true,
+		'text': "<p><audio\n  src=\"gameover.ogg\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio></p>\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
+		'js': function() {
+			   
+		},
+		'passages': {
+		},
+	},
+	'Findeljuegoc': {
+		'clear': true,
+		'text': "<p><audio\n  src=\"gameover.ogg\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\nTe has escondido en el casillero, pero el hombre gordo ha mirado por la rendija, se aleja por un instante...luego, regresa corriendo y abre la puerta del casillero. Tu fin ha llegado.</p>\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
+		'js': function() {
+			   
+		},
+		'passages': {
+		},
+	},
+	'Observar1': {
+		'text': "<p>Has tomado la llave. Para algo tiene que servir, puede ser la clave para escapar de aquí.\n <br>\n <br>\n<b><p><em>Has obtenido &quot;Llave&quot;.</em></p></b></p>\n<p>En la habitación hay:<br>\n<a class=\"squiffy-link link-passage\" data-passage=\"Un viejo congelador\" role=\"link\" tabindex=\"0\">Un viejo congelador</a> | <a class=\"squiffy-link link-passage\" data-passage=\"TV vieja\" role=\"link\" tabindex=\"0\">TV vieja</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Sierras y cuchillos\" role=\"link\" tabindex=\"0\">Sierras y cuchillos</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Ventanilla\" role=\"link\" tabindex=\"0\">Ventanilla</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Casillero\" role=\"link\" tabindex=\"0\">Casillero</a></p>\n<p>Ir a:<br>\n<a class=\"squiffy-link link-section\" data-section=\"EscenaPasillo3\" role=\"link\" tabindex=\"0\">Pasillo</a></p>",
+		'attributes': ["Llave=1"],
+		'passages': {
+			'Un viejo congelador': {
+				'text': "<p><div align=\"justify\">\nHay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, tal vez puedes <a class=\"squiffy-link link-passage\" data-passage=\"Abrir el congelador\" role=\"link\" tabindex=\"0\">Abrir el congelador</a> para ver si hay algo útil.<div align=\"justify\"></p>",
+			},
+			'Abrir el congelador': {
+				'text': "<p><div align=\"justify\">\nAl abrirlo, una densa neblina emana, al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align=\"justify\">\n<br>\n<b><p><em>Has ganado 1 punto de locura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'attributes': ["Locura = 0","Locura+=1"],
+			},
+			'TV vieja': {
+				'text': "<p>A tu izquierda hay un mueble con una TV vieja. Tal vez, las noticias ya están hablando de tu desaparición, ¿quieres <a class=\"squiffy-link link-passage\" data-passage=\"Encenderla\" role=\"link\" tabindex=\"0\">Encenderla</a>?</p>",
+			},
+			'Encenderla': {
+				'text': "<p><div align=\"justify\">\nAl presionar el switch de encendido, un sonido ensordecedor sale de la pantalla, no hay señal. <div align=\"justify\"></p>\n<p>A lo lejos escuchas pasos. No fue una buena idea encender el televisor.</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Esconderse en el casillero.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Te escondes debajo de la mesa.</p>\n</li>\n</ul>",
+			},
+			'A': {
+				'text': "",
+				'js': function() {
+					squiffy.story.go("CasilleroL");
+				},
+			},
+			'B': {
+				'text': "",
+				'js': function() {
+					 squiffy.story.go("CasilleroD");
+					
+				},
+			},
+			'Sierras y cuchillos': {
+				'text': "<p><div align=\"justify\">\nUna mesa a tu izquierda te da escalofrios, esta llena de sierras y cuchillos, algunos manchados con líquido rojo oscuro. Necesitas algo con que defenderte, el <a class=\"squiffy-link link-passage\" data-passage=\"Machete\" role=\"link\" tabindex=\"0\">Machete</a> parece una buena opción para defenderse. Hay un cajón semiabierto, parece que es aquel que el hombre gordo abrió. Tal vez deberías <a class=\"squiffy-link link-passage\" data-passage=\"Abrir el cajón\" role=\"link\" tabindex=\"0\">Abrir el cajón</a>.<div align=\"justify\"></p>",
+			},
+			'Machete': {
+				'text': "<p><div align=\"justify\">\nCuando estabas a punto de tomarlo, alejas tu mano. No te sientes cómodo con esto. La violencia no es lo tuyo, no sabrías que hacer con el arma.<div align=\"justify\"></p>",
+			},
+			'Abrir el cajón': {
+				'text': "<p>Abres el cajón, nuevamente. Solo ves que hay una <a class=\"squiffy-link link-passage\" data-passage=\"nota\" role=\"link\" tabindex=\"0\">nota</a>.</p>",
+			},
+			'nota': {
+				'text': "<p>Puedes leer en la nota </p>",
+			},
+			'Ventanilla': {
+				'text': "<p><div align=\"justify\">\nUna ventanilla ya hace encima de la mesa con sierras y cuchillos a tu izquierda, estás en un sótano. Además, esta reforzada con barrotes de metal. No tienes tiempo para intentar salir por ahí.<div align=\"justify\"></p>",
+			},
+			'Casillero': {
+				'text': "<p>Un casillero de metal oxidado al derecha del congelador. Su puerta esta abierta, no tiene nada en su interior más que suciedad.</p>",
+			},
+		},
+	},
+	'Observar2': {
+		'text': "<p><div align=\"justify\">\nEl hombre que hace llamar Gulli, ha pasado a un lado del casillero. Al no verte atado a la silla, ha soltado un alarido pavoroso y ha salido corriendo por el pasillo.<div align=\"justify\"></p>\n<p>En la habitación hay:<br>\n<a class=\"squiffy-link link-passage\" data-passage=\"Un viejo congelador\" role=\"link\" tabindex=\"0\">Un viejo congelador</a> | <a class=\"squiffy-link link-passage\" data-passage=\"TV vieja\" role=\"link\" tabindex=\"0\">TV vieja</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Sierras y cuchillos\" role=\"link\" tabindex=\"0\">Sierras y cuchillos</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Ventanilla\" role=\"link\" tabindex=\"0\">Ventanilla</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Casillero\" role=\"link\" tabindex=\"0\">Casillero</a></p>\n<p>Ir a:<br>\n<a class=\"squiffy-link link-section\" data-section=\"EscenaPasillo3\" role=\"link\" tabindex=\"0\">Pasillo</a></p>",
+		'passages': {
+			'Un viejo congelador': {
+				'text': "<p><div align=\"justify\">\nHay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, tal vez puedes <a class=\"squiffy-link link-passage\" data-passage=\"Abrir el congelador\" role=\"link\" tabindex=\"0\">Abrir el congelador</a> para ver si hay algo útil.<div align=\"justify\"></p>",
+			},
+			'Abrir el congelador': {
+				'text': "<p><div align=\"justify\">\nAl abrirlo, una densa neblina emana, al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align=\"justify\">\n<br>\n<b><p><em>Has ganado 1 punto de locura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'attributes': ["Locura = 0","Locura+=1"],
+			},
+			'TV vieja': {
+				'text': "<p><div align=\"justify\">\nA tu izquierda hay un mueble con una TV vieja. Tal vez, las noticias ya están hablando de tu desaparición, mejor no encenderla...ya no...<div align=\"justify\"></p>",
+			},
+			'Sierras y cuchillos': {
+				'text': "<p><div align=\"justify\">\nUna mesa a tu izquierda te da escalofrios, esta llena de sierras y cuchillos, algunos manchados con líquido rojo oscuro. Necesitas algo con que defenderte, el machete ya no te interesa. Hay un cajón semiabierto, parece que es aquel que el hombre gordo abrió. No hay nada más. <div align=\"justify\"></p>",
+			},
+			'Machete': {
+				'text': "<p><div align=\"justify\">\nCuando estabas a punto de tomarlo, alejas tu mano. No te sientes cómodo con esto. La violencia no es lo tuyo, no sabrías que hacer con el arma.<div align=\"justify\"></p>",
+			},
+			'Abrir el cajón': {
+				'text': "<p>Abres el cajón.<br><br>        {if Llave=1:<em> <a class=\"squiffy-link link-section\" data-section=\"Habitaciónf\" role=\"link\" tabindex=\"0\">A</a> No hay nada más...} {else:</em> <a class=\"squiffy-link link-section\" data-section=\"Observar2\" role=\"link\" tabindex=\"0\">A</a> Ves una llave, la agarras...}      </p>",
+			},
+			'nota': {
+				'text': "<p><div align=\"justify\">\nPuedes leer en la nota &quot;Gulli nunca duerme, Gulli trabaja siempre, Gulli quiere complacer a las voces...Gulli necesita más cuerpos para trabajar...&quot;.<div align=\"justify\"></p>",
+			},
+			'Ventanilla': {
+				'text': "<p><div align=\"justify\">\nUna ventanilla ya hace encima de la mesa con sierras y cuchillos a tu izquierda, estás en un sótano. Además, esta reforzada con barrotes de metal. No tienes tiempo para intentar salir por ahí.<div align=\"justify\"></p>",
+			},
+			'Casillero': {
+				'text': "<p><div align=\"justify\">\nUn casillero de metal oxidado al derecha del congelador. Su puerta esta abierta, no tiene nada en su interior más que suciedad.<div align=\"justify\"></p>",
+			},
+		},
+	},
+	'EscenaPasillo': {
+		'text': "<p><div align=\"justify\">\nEntras con precaución al pasillo. Esta semioscuro. A tu derecha ves unos escalones que llevan a una puerta. La puerta tiene una cadena en la perilla con un gran candado. A tu izquierda hay una habitación oscura que te da escalofríos solo verla.<div align=\"justify\"></p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Regresar a la habitación.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Ir hacia la puerta.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Ir hacia la habitación oscura.</p>\n</li>\n</ul>",
+		'passages': {
+			'A': {
+				'text': "",
+				'attributes': ["score+=20"],
+				'js': function() {
+					squiffy.story.go("Observarcuarto");
+				},
+			},
+			'B': {
+				'text': "<p>¿Y para qué? No tienes una llave...</p>",
+				'attributes': ["score-=10"],
+			},
+			'C': {
+				'text': "<p>No es buena idea, ¿y si ahí se encuentra el hombre gordo?\n        {if Locura=4:* <a class=\"squiffy-link link-section\" data-section=\"danger\" role=\"link\" tabindex=\"0\">Continuar...</a>} {else: Sientes que un escalofrío hiela tu columna vertebral...}<br><br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'attributes': ["score-=50","Locura","Locura+=1"],
+			},
+		},
+	},
+	'danger': {
+		'text': "<p><div align=\"justify\">\nCaminas tembloroso hacia la habitación. Las luces encendiéndose y apagándose de manera intermitente te pone de nervios. Cuando entras, te horrorizas al ver cuerpos apilados uno encima de otro, sobre un charco de sangre, iluminados por una luz azul en la esquina de la habitación. De repente, Gulli, aparece detrás de tí y te dice:</p>\n<ul>\n<li>¡No debes estar aquí, malnacido! - exclama, luego enciende la motosierra que tiene entre las manos. Ha llegado tu fin<div align=\"justify\"></li>\n</ul>\n<p><a class=\"squiffy-link link-section\" data-section=\"Findeljuego\" role=\"link\" tabindex=\"0\">Continuar...</a></p>",
+		'passages': {
+		},
+	},
+	'EscenaPasillo3': {
+		'text': "<p><div align=\"justify\">\nEntras con precaución al pasillo. Esta semioscuro. A tu derecha ves unos escalones que llevan a una puerta. La puerta tiene una cadena en la perilla con un gran candado. A tu izquierda hay una habitación oscura que te da escalofríos solo verla.<div align=\"justify\"></p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Regresar a la habitación.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Ir hacia la puerta.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Ir hacia la habitación oscura.</p>\n</li>\n</ul>",
+		'passages': {
+			'A': {
+				'text': "",
+				'attributes': ["score+=10"],
+				'js': function() {
+					squiffy.story.go("Habitaciónf");
+				},
+			},
+			'B': {
+				'text': "",
+				'attributes': ["score+=30"],
+				'js': function() {
+					squiffy.story.go("PuertaCandado2");
+				},
+			},
+			'C': {
+				'text': "<p>No es buena idea, ¿y si ahí se encuentra el hombre gordo?\n        {if Locura=4:* <a class=\"squiffy-link link-section\" data-section=\"danger\" role=\"link\" tabindex=\"0\">Continuar...</a>} {else: Sientes que un escalofrío hiela tu columna vertebral...}<br><br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'attributes': ["score-=50","Locura","Locura+=1"],
+			},
+		},
+	},
+	'PuertaCandado2': {
+		'text': "<p>La puerta tiene una cadena con un enorme candado atravesado por la perilla.</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Regresar al pasillo.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Regresar a la habitación.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Quitar candado.</p>\n</li>\n</ul>",
+		'passages': {
+			'A': {
+				'text': "",
+				'attributes': ["score-=10"],
+				'js': function() {
+					squiffy.story.go("EscenaPasillo3");
+				},
+			},
+			'B': {
+				'text': "",
+				'attributes': ["score-=30"],
+				'js': function() {
+					squiffy.story.go("Habitacionf");
+				},
+			},
+			'C': {
+				'text': "<p>Observar el candado.<br>\n    {if Llave=1:<em> <a class=\"squiffy-link link-section\" data-section=\"FinalEpisodio\" role=\"link\" tabindex=\"0\">A</a> Sacas la llave de tu bolsillo y la introduces en el candado...} {else:</em> <a class=\"squiffy-link link-section\" data-section=\"PuertaCandado2\" role=\"link\" tabindex=\"0\">B</a> No tienes la llave...}  </p>",
+				'attributes': ["score+=40"],
+			},
+		},
+	},
+	'FinalEpisodio': {
+		'clear': true,
+		'text': "<p><audio\n  src=\"haunt.mp3\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio></p>\n<p><div align=\"justify\">\nQuitas el candado, cuidadosamente, y empujas la puerta. Sales del sótano, ahora estas en una habitación repletas de libros. A lo lejos escuchas pasos, parecen provenir del sótano...<div align=\"justify\"></p>\n<p><div align=\"center\"><b><p><em>FIN DEL EPISODIO I</em></p></b></div></p>\n<p><div align=\"center\"><b><p><em>Presiona continuar para conocer tu status. Y proseguir la historia. Tal vez, este es un buen momento para que descanses tu vista.</em></p></b></div>\n<br>\n<a class=\"squiffy-link link-section\" data-section=\"Status\" role=\"link\" tabindex=\"0\">Continuar...</a></p>",
+		'js': function() {
+			   
+		},
+		'passages': {
+		},
+	},
+	'Status1': {
+		'text': "<p><div align=\"center\"><b><p><em>STATUS</em></p></b></div></p>\n<p><div align=\"center\"><p><em>Puntos de vida: {Health}</em></p></div></p>\n<p><div align=\"center\"><p><em>Cordura: {Locura}</em></p></div>\n<br>\n<br>\n        {if Health&gt;3:<em> Te han herido, pero has sabido manejar la situación.} {else:</em> Has estado a punto de morir...}</p>\n<pre><code>    {if Locura&gt;3:* Tus nervios y cordura casi te hacen morir.} {else:* Tienes nervios de acero...}\n</code></pre><p><a class=\"squiffy-link link-section\" data-section=\"start\" role=\"link\" tabindex=\"0\">Continuar...</a></p>",
 		'passages': {
 		},
 	},
