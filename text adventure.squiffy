@@ -4,7 +4,13 @@
     squiffy.story.go("start");
 
 [[start]]:
-
+@clear
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <audio
   src="night2.mp3"
   autoplay>
@@ -15,32 +21,35 @@
 <div align="center">
 <img src="smilingg.png">
 </div> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-@set score = 0
-@set Health = 5
-@set Llave = 0
 
 <div align="center"><b><p><em>ELIGE UN CAPÍTULO</em></p></b></div>
 
 <div align="center">
-[Capítulo 1](Empezar)<br>
-<br> 
+[Capítulo I](Empezar)<br>
+<br>
 </div> 
 
 <div align="center">
-[Capítulo 2](Muypronto)<br>
+[Capítulo II](Muypronto)<br>
 <br> 
 </div> 
 <div align="center">
-[Capítulo 3](Muypronto)<br>
+[Capítulo III](Muypronto)<br>
 <br> 
 </div> 
 <div align="center">
-[Capítulo 4](Muypronto)<br>
+[Capítulo IV](Muypronto)<br>
 <br> 
 </div> 
 <div align="center">
-[Capítulo 5](Muypronto)<br>
+[Capítulo V](Muypronto)<br>
 <br> 
 </div> 
 
@@ -50,6 +59,10 @@
 [Cómo se juega](Modo)<br>
 <br> 
 </div> 
+
+<div align="center"><b><p><em>STATUS DEL JUEGO</em></p></b></div>
+<div align="center">
+<div align="center"><p><em>[[Status del Capítulo I]](Status1)</em></p></div>
 
 <div align="center"><b><p><em>ABOUT</em></p></b></div>
 <div align="center">
@@ -83,6 +96,7 @@ Cada decisión tomada te dará puntos (Score).<br>
 Tus puntos de vida iniciales son 5 (Puntos de vida).<br>
 ¡Cuidado! Tu cordura puede jugarte malas pasadas (Locura).<br>
 Si pierdes presiona en la parte superior del texto reiniciar para volver a empezar (Restart - Reiniciar Partida).<br>
+Al completar el capítulo tu status quedará grabado en "Status", en el menú principal, pero si vuelves a jugar el mismo capítulo se eliminarán.<br>
 
 Los capítulos se irán agregando paulatinamente. Lo mejor que puedes hacer para apoyar este proceso apoyando la app, compartiendo y dando 5 estrellas. Esto ayudara mucho en agilizar al update del resto del juego.
 <div align="justify">
@@ -93,7 +107,10 @@ QugenBooks 2017
 
 [[Capitulo1]]:
 @clear
-                
+@set Health = 5                
+@set Locura = 0
+@set score = 0
+@set Llave = 0
 
 <audio
   src="haba.mp3"
@@ -105,7 +122,7 @@ QugenBooks 2017
 <div align="center"><b><p><em><h1>El cadaver<br>sonriente</h1></em></p></b></div>
 <div align="center">
 
-<div align="justify"><h2>Capítulo 1</h2><div align="justify">
+<div align="justify"><h2>Capítulo I</h2><div align="justify">
 
 
 <div align="center">
@@ -301,7 +318,11 @@ Nadie te escucha. La habitación continúa en un silencio mortuorio.
 
 
 [C]:
-       @set Locura = 0
+<audio
+  src="gameover.ogg"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
        @inc Locura
 <div align="justify">       
 Te sientes desolado, quieres creer que no estas teniendo una alucinación. En tu mente algo ha hecho ´crack´, aún así no estas dispuesto a quedarte aquí de brazos cruzados.<div align="justify"> <br>
@@ -357,7 +378,7 @@ Despiertas, no sabes cuanto tiempo has estado inconciente. Puedes ver el cuchill
 @clear
        
 <audio
-  src="gameover.ogg"
+  src="horro7.mp3"
   autoplay>
   <loop>
   Your browser does not support the <code>audio</code> element.
@@ -451,9 +472,17 @@ Hay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, ta
 [Abrir el congelador]:
 <div align="justify">
 Al abrirlo, una densa neblina emana. Al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align="justify">
-     @set Locura = 0
+     
      @inc Locura
 <br>
+
+<br>
+<audio
+  src="gameover.ogg"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
 <b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b>
 
 [TV vieja]:
@@ -525,6 +554,12 @@ Te has escondido debajo de la mesa. El hombre gordo a entrado y te ha visto.
 <img src="2.png">
 </div> 
 
+<br>
+<audio
+  src="horro4.mp3"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
 
 <div align="center"><b><p><em>FIN DEL JUEGO</em></p></b></div>
 <div align="center"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>
@@ -533,7 +568,7 @@ Te has escondido debajo de la mesa. El hombre gordo a entrado y te ha visto.
 @clear
        
 <audio
-  src="gameover.ogg"
+  src="horro4.mp3"
   autoplay>
   <loop>
   Your browser does not support the <code>audio</code> element.
@@ -550,7 +585,7 @@ Te has escondido debajo de la mesa. El hombre gordo a entrado y te ha visto.
 
        
 <audio
-  src="gameover.ogg"
+  src="horro7.mp3"
   autoplay>
   <loop>
   Your browser does not support the <code>audio</code> element.
@@ -592,6 +627,12 @@ Al abrirlo, una densa neblina emana. Al ver con más atención...te horrorizas a
    
      @inc Locura
 <br>
+<audio
+  src="gameover.ogg"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
 <b><p><em>Has ganado 1 punto de locura. Tus puntos de locura son {Locura}.</em></p></b>
 
 [TV vieja]:
@@ -645,6 +686,17 @@ Un casillero de metal oxidado al derecha del congelador. Su puerta esta abierta,
         
 
 [[CasillerD]]:
+
+<div align="center">
+<img src="2.png">
+</div> 
+
+<audio
+  src="horro4.mp3"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
 <div align="justify">
 Te has escondido debajo de la mesa. El hombre gordo a entrado y te ha visto.
 
@@ -664,6 +716,11 @@ Te has escondido debajo de la mesa. El hombre gordo a entrado y te ha visto.
 <img src="11.png">
 </div> 
 
+<audio
+  src="horro1.mp3"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
 
 <div align="justify">
 El hombre que se hace llamar Gulli, ha pasado a un lado del casillero. Al no verte atado a la silla, ha soltado un alarido pavoroso y ha salido corriendo por el pasillo.<div align="justify">
@@ -686,6 +743,12 @@ Hay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, ta
 [Abrir el congelador]:
 <div align="justify">
 Al abrirlo, una densa neblina emana, al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align="justify">
+
+<audio
+  src="gameover.ogg"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
     
      @inc Locura
 <br>
@@ -797,6 +860,12 @@ Entras con precaución al pasillo. Esta semioscuro. A tu derecha ves unos escalo
 @dec score 50
 No es buena idea, ¿y si ahí se encuentra el hombre gordo?
        
+<audio
+  src="gameover.ogg"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>       
+       
         @inc Locura
         {if Locura>3:* [[Continuar...]](danger)} {else: Sientes que un escalofrío hiela tu columna vertebral...}  
 <br>
@@ -812,6 +881,12 @@ No es buena idea, ¿y si ahí se encuentra el hombre gordo?
 Caminas tembloroso hacia la habitación. Las luces encendiéndose y apagándose de manera intermitente te pone de nervios. Cuando entras, te horrorizas al ver cuerpos apilados uno encima de otro, sobre un charco de sangre, iluminados por una luz azul en la esquina de la habitación. De repente, Gulli, aparece detrás de tí y te dice:
 
 - ¡No debes estar aquí, malnacido! - exclama, luego enciende la motosierra que tiene entre las manos. Ha llegado tu fin.<div align="justify">
+
+<audio
+  src="horro7.mp3"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
 
 <div align="center">
 <img src="10.png">
@@ -845,6 +920,13 @@ Entras con precaución al pasillo. Esta semioscuro. A tu derecha ves unos escalo
 [C]:
 @dec score 50
 No es buena idea, ¿y si ahí se encuentra el hombre gordo?
+
+<audio
+  src="gameover.ogg"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
         @inc Locura
         {if Locura>3:* [[Continuar...]](danger)} {else: Sientes que un escalofrío hiela tu columna vertebral...}  
 <br>
@@ -860,6 +942,12 @@ No es buena idea, ¿y si ahí se encuentra el hombre gordo?
 Caminas tembloroso hacia la habitación. Las luces encendiéndose y apagándose de manera intermitente te pone de nervios. Cuando entras, te horrorizas al ver cuerpos apilados uno encima de otro, sobre un charco de sangre, iluminados por una luz azul en la esquina de la habitación. De repente, Gulli, aparece detrás de tí y te dice:
 
 - ¡No debes estar aquí, malnacido! - exclama, luego enciende la motosierra que tiene entre las manos. Ha llegado tu fin.<div align="justify">
+
+<audio
+  src="horro7.mp3"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
 
 <div align="center">
 <img src="10.png">
@@ -914,13 +1002,20 @@ Quitas el candado, cuidadosamente, y empujas la puerta. Sales del sótano, ahora
 
 [[Status1]]:
 <div align="center"><b><p><em>STATUS</em></p></b></div>
-<div align="center"><p><em>Puntos de vida: {Health}</em></p></div>
+<div align="center"><p><em>Score Total: {score}</em></p></div>
+<div align="center"><p><em>Puntos de Vida: {Health}</em></p></div>
 <div align="center"><p><em>Cordura: {Locura}</em></p></div>
 <br>
 <br>
-        {if Health>3:* Te han herido, pero has sabido manejar la situación.} {else:* Has estado a punto de morir...}
+        {if Health>3:* Te han herido, pero has sabido manejar la situación.} 
+        {if Health=3:* Eso ha dolido...} 
+        {if Health=2:* Lo tuyo no es la supervivencia.} 
+        {if Health=1:* Por un pelo...} 
 
-        {if Locura>3:* Tus nervios y cordura casi te hacen morir.} {else:* Tienes nervios de acero...}
+        {if Locura>3:* Estas chalado.} 
+         {if Locura=3:* ¿Que eso que se ve en la oscuridad?.}
+          {if Locura=2:* Esto ha comenzado a ponerte nervioso.}
+           {if Locura=1:* Cuerdo Clínicamanete.}
 
 
 [[Continuar...]](start)

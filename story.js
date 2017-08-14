@@ -620,8 +620,8 @@ squiffy.story.sections = {
 		},
 	},
 	'start': {
-		'text': "<audio\n  src=\"night2.mp3\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n\n<div align=\"center\">\n<img src=\"smilingg.png\">\n</div> \n\n\n<div align=\"center\"><b><p><em>ELIGE UN CAPÍTULO</em></p></b></div>\n\n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Empezar\" role=\"link\" tabindex=\"0\">Capítulo 1</a><br>\n<br> \n</div> \n\n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo 2</a><br>\n<br> \n</div> \n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo 3</a><br>\n<br> \n</div> \n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo 4</a><br>\n<br> \n</div> \n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo 5</a><br>\n<br> \n</div> \n\n<div align=\"center\"><b><p><em>INSTRUCCIONES</em></p></b></div>\n<div align=\"center\">\n\n<a class=\"squiffy-link link-passage\" data-passage=\"Modo\" role=\"link\" tabindex=\"0\">Cómo se juega</a><br>\n<br> \n</div> \n\n<div align=\"center\"><b><p><em>ABOUT</em></p></b></div>\n<div align=\"center\">\n<div align=\"center\"><p><em>QugenBooks 2017</em></p></div>",
-		'attributes': ["score = 0","Health = 5","Llave = 0"],
+		'clear': true,
+		'text': "<p><br>\n<br>\n<br>\n<br>\n<br>\n<br></p>\n<audio\n  src=\"night2.mp3\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n\n<div align=\"center\">\n<img src=\"smilingg.png\">\n</div> \n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n\n\n<div align=\"center\"><b><p><em>ELIGE UN CAPÍTULO</em></p></b></div>\n\n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Empezar\" role=\"link\" tabindex=\"0\">Capítulo I</a><br>\n<br>\n</div> \n\n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo II</a><br>\n<br> \n</div> \n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo III</a><br>\n<br> \n</div> \n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo IV</a><br>\n<br> \n</div> \n<div align=\"center\">\n<a class=\"squiffy-link link-passage\" data-passage=\"Muypronto\" role=\"link\" tabindex=\"0\">Capítulo V</a><br>\n<br> \n</div> \n\n<div align=\"center\"><b><p><em>INSTRUCCIONES</em></p></b></div>\n<div align=\"center\">\n\n<a class=\"squiffy-link link-passage\" data-passage=\"Modo\" role=\"link\" tabindex=\"0\">Cómo se juega</a><br>\n<br> \n</div> \n\n<div align=\"center\"><b><p><em>STATUS DEL JUEGO</em></p></b></div>\n<div align=\"center\">\n<div align=\"center\"><p><em><a class=\"squiffy-link link-section\" data-section=\"Status1\" role=\"link\" tabindex=\"0\">Status del Capítulo I</a></em></p></div>\n\n<div align=\"center\"><b><p><em>ABOUT</em></p></b></div>\n<div align=\"center\">\n<div align=\"center\"><p><em>QugenBooks 2017</em></p></div>",
 		'passages': {
 			'Empezar': {
 				'clear': true,
@@ -642,7 +642,7 @@ squiffy.story.sections = {
 				'text': "<p>Pronto la actualización para jugar este capítulo. ¡Comparte esta app y dale 5 estrellas, si fue de tu agrado! Eso nos sería de mucha ayuda.<br>\n-QugenBooks</p>",
 			},
 			'Modo': {
-				'text': "<div align=\"justify\"><b><p><em>&quot;Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...¿crees que podrás sobrevivir?&quot;</em></p></b></div>\n\n<p>Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones para poder avanzar durante la partida.<br> \nCada decisión tomada te dará puntos (Score).<br>\nTus puntos de vida iniciales son 5 (Puntos de vida).<br>\n¡Cuidado! Tu cordura puede jugarte malas pasadas (Locura).<br>\nSi pierdes presiona en la parte superior del texto reiniciar para volver a empezar (Restart - Reiniciar Partida).<br></p>\n<p>Los capítulos se irán agregando paulatinamente. Lo mejor que puedes hacer para apoyar este proceso apoyando la app, compartiendo y dando 5 estrellas. Esto ayudara mucho en agilizar al update del resto del juego.</p>\n<div align=\"justify\">",
+				'text': "<div align=\"justify\"><b><p><em>&quot;Te has despertado con un fuerte dolor de cabeza. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...¿crees que podrás sobrevivir?&quot;</em></p></b></div>\n\n<p>Descubre el camino a la supervivencia. Este es un Gamebook tambíen conocido como Text adventure, en el cual tendrás que tomar desiciones para poder avanzar durante la partida.<br> \nCada decisión tomada te dará puntos (Score).<br>\nTus puntos de vida iniciales son 5 (Puntos de vida).<br>\n¡Cuidado! Tu cordura puede jugarte malas pasadas (Locura).<br>\nSi pierdes presiona en la parte superior del texto reiniciar para volver a empezar (Restart - Reiniciar Partida).<br>\nAl completar el capítulo tu status quedará grabado en &quot;Status&quot;, en el menú principal, pero si vuelves a jugar el mismo capítulo se eliminarán.<br></p>\n<p>Los capítulos se irán agregando paulatinamente. Lo mejor que puedes hacer para apoyar este proceso apoyando la app, compartiendo y dando 5 estrellas. Esto ayudara mucho en agilizar al update del resto del juego.</p>\n<div align=\"justify\">",
 			},
 			'About': {
 				'text': "<p>QugenBooks 2017</p>",
@@ -651,10 +651,8 @@ squiffy.story.sections = {
 	},
 	'Capitulo1': {
 		'clear': true,
-		'text': "<audio\n  src=\"haba.mp3\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<div align=\"center\"><b><p><em><h1>El cadaver<br>sonriente</h1></em></p></b></div>\n<div align=\"center\">\n\n<div align=\"justify\"><h2>Capítulo 1</h2><div align=\"justify\">\n\n\n<div align=\"center\">\n<img src=\"1.png\">\n</div> \n\n<p>Te has despertado con un fuerte dolor de cabeza. Una mujer cantando ópera martilla tus sentidos. No sabes de dónde viene la música. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Mueves tus manos desesperadamente, esperanzado a escapar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Lo observas fijamente, intentas permanecer tranquilo.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Le preguntas &quot;¿Quién eres?&quot;.</p>\n</li>\n</ul>",
-		'js': function() {
-			            
-		},
+		'text': "<audio\n  src=\"haba.mp3\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<div align=\"center\"><b><p><em><h1>El cadaver<br>sonriente</h1></em></p></b></div>\n<div align=\"center\">\n\n<div align=\"justify\"><h2>Capítulo I</h2><div align=\"justify\">\n\n\n<div align=\"center\">\n<img src=\"1.png\">\n</div> \n\n<p>Te has despertado con un fuerte dolor de cabeza. Una mujer cantando ópera martilla tus sentidos. No sabes de dónde viene la música. Estás sentado con las manos atadas a una silla de madera. Te encuentras en una habitación oscura con un foco colgando, exactamente, encima de tu cabeza. Un hombre, gordo, con una sonrisa te observa a lo lejos, su expresión perdida y carente de cordura te hiela la sangre. Se acerca lentamente sobandose las manos, curioso, tímido, decidido...</p>\n<ul>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"A\" role=\"link\" tabindex=\"0\">A</a> Mueves tus manos desesperadamente, esperanzado a escapar.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"B\" role=\"link\" tabindex=\"0\">B</a> Lo observas fijamente, intentas permanecer tranquilo.</p>\n</li>\n<li><p><a class=\"squiffy-link link-passage\" data-passage=\"C\" role=\"link\" tabindex=\"0\">C</a> Le preguntas &quot;¿Quién eres?&quot;.</p>\n</li>\n</ul>",
+		'attributes': ["Health = 5","Locura = 0","score = 0","Llave = 0"],
 		'passages': {
 			'A': {
 				'text': "<p><div align=\"justify\">\nTe mueves enérgicamente, pero notas que es imposible quitarse las ataduras. La expresión del hombre es de sorpresa al ver tu intento fallido; se detiene, abre los ojos, dibuja una &quot;o&quot; con sus labios, después de unos segundos, vuelve a sonreir.<div align=\"justify\"></p>",
@@ -765,8 +763,8 @@ squiffy.story.sections = {
 				},
 			},
 			'C': {
-				'text': "<p><div align=\"justify\"><br>Te sientes desolado, quieres creer que no estas teniendo una alucinación. En tu mente algo ha hecho ´crack´, aún así no estas dispuesto a quedarte aquí de brazos cruzados.<div align=\"justify\"> <br>\n<br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo tu cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
-				'attributes': ["Locura = 0","Locura+=1"],
+				'text': "<p><audio\n  src=\"gameover.ogg\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio></p>\n<p><div align=\"justify\"><br>Te sientes desolado, quieres creer que no estas teniendo una alucinación. En tu mente algo ha hecho ´crack´, aún así no estas dispuesto a quedarte aquí de brazos cruzados.<div align=\"justify\"> <br>\n<br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo tu cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'attributes': ["Locura+=1"],
 			},
 		},
 	},
@@ -802,7 +800,7 @@ squiffy.story.sections = {
 			},
 			'B': {
 				'clear': true,
-				'text': "<audio\n  src=\"gameover.ogg\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n <div align=\"justify\">\nUna vez que agarras el cuchillo de alguna manera consigues introducirlo por debajo de la atadura y empiezas a cortar con desesperación. Sin embargo, cuando estabas a punto de terminar el hombre ha entrado por la puerta.\n\n-¡¿Qué haces?! - exclama colocando sus manos en la cabeza -¡Otra vez engañando a Gulli!- Su mirada se inyecta en sangre y se mueve lo más rápido que puede hacia a ti - Ahora verás, ya es hora.\n\nTe arranca el cuchillo de la mano. Lo alza por encima de su cabeza. Sabes que es el final.<div align=\"justify\">\n\n<div align=\"center\">\n<img src=\"2.png\">\n</div> \n\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
+				'text': "<audio\n  src=\"horro7.mp3\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n <div align=\"justify\">\nUna vez que agarras el cuchillo de alguna manera consigues introducirlo por debajo de la atadura y empiezas a cortar con desesperación. Sin embargo, cuando estabas a punto de terminar el hombre ha entrado por la puerta.\n\n-¡¿Qué haces?! - exclama colocando sus manos en la cabeza -¡Otra vez engañando a Gulli!- Su mirada se inyecta en sangre y se mueve lo más rápido que puede hacia a ti - Ahora verás, ya es hora.\n\nTe arranca el cuchillo de la mano. Lo alza por encima de su cabeza. Sabes que es el final.<div align=\"justify\">\n\n<div align=\"center\">\n<img src=\"2.png\">\n</div> \n\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
 				'attributes': ["score-=50"],
 				'js': function() {
 					   
@@ -875,8 +873,8 @@ squiffy.story.sections = {
 				'text': "<p><div align=\"justify\">\nHay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, tal vez puedes <a class=\"squiffy-link link-passage\" data-passage=\"Abrir el congelador\" role=\"link\" tabindex=\"0\">Abrir el congelador</a> para ver si hay algo útil.<div align=\"justify\"></p>",
 			},
 			'Abrir el congelador': {
-				'text': "<p><div align=\"justify\">\nAl abrirlo, una densa neblina emana. Al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align=\"justify\">\n<br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
-				'attributes': ["Locura = 0","Locura+=1"],
+				'text': "<p><div align=\"justify\">\nAl abrirlo, una densa neblina emana. Al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align=\"justify\"></p>\n<p><br></p>\n<p><br></p>\n<audio\n  src=\"gameover.ogg\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<p><b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'attributes': ["Locura+=1"],
 			},
 			'TV vieja': {
 				'text': "<p><div align=\"justify\">\nA tu izquierda hay un mueble con una TV vieja. Tal vez, las noticias ya están hablando de tu desaparición, ¿quieres <a class=\"squiffy-link link-passage\" data-passage=\"Encenderla\" role=\"link\" tabindex=\"0\">Encenderla</a>?<div align=\"justify\"></p>",
@@ -933,13 +931,13 @@ squiffy.story.sections = {
 		},
 	},
 	'CasillerD': {
-		'text': "<div align=\"justify\">\nTe has escondido debajo de la mesa. El hombre gordo a entrado y te ha visto.\n\n-Has faltado a la confianza de Gulli - Te estira del pie bruscamente y te saca -. Ellos estan molestos, ha llegado la hora.<div align=\"justify\">\n\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
+		'text': "<div align=\"center\">\n<img src=\"2.png\">\n</div> \n\n<audio\n  src=\"horro4.mp3\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<div align=\"justify\">\nTe has escondido debajo de la mesa. El hombre gordo a entrado y te ha visto.\n\n-Has faltado a la confianza de Gulli - Te estira del pie bruscamente y te saca -. Ellos estan molestos, ha llegado la hora.<div align=\"justify\">\n\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
 		'passages': {
 		},
 	},
 	'Findeljuego': {
 		'clear': true,
-		'text': "<p><audio\n  src=\"gameover.ogg\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio></p>\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
+		'text': "<p><audio\n  src=\"horro4.mp3\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio></p>\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
 		'js': function() {
 			   
 		},
@@ -948,7 +946,7 @@ squiffy.story.sections = {
 	},
 	'Findeljuegoc': {
 		'clear': true,
-		'text': "<div align=\"center\">\n<img src=\"11.png\">\n</div> \n\n\n<p><audio\n  src=\"gameover.ogg\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\nTe has escondido en el casillero, pero el hombre gordo ha mirado por la rendija, se aleja por un instante...luego, regresa corriendo y abre la puerta del casillero. Tu fin ha llegado.</p>\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
+		'text': "<div align=\"center\">\n<img src=\"11.png\">\n</div> \n\n\n<p><audio\n  src=\"horro7.mp3\"\n  autoplay>\n  <loop>\n  Your browser does not support the <code>audio</code> element.\n</audio>\nTe has escondido en el casillero, pero el hombre gordo ha mirado por la rendija, se aleja por un instante...luego, regresa corriendo y abre la puerta del casillero. Tu fin ha llegado.</p>\n<div align=\"center\"><b><p><em>FIN DEL JUEGO</em></p></b></div>\n<div align=\"center\"><b><p><em>Presiona Restart o Reiniciar Partida para volver a jugar.</em></p></b></div>",
 		'passages': {
 		},
 	},
@@ -960,7 +958,7 @@ squiffy.story.sections = {
 				'text': "<p><div align=\"justify\">\nHay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, tal vez puedes <a class=\"squiffy-link link-passage\" data-passage=\"Abrir el congelador\" role=\"link\" tabindex=\"0\">Abrir el congelador</a> para ver si hay algo útil.<div align=\"justify\"></p>",
 			},
 			'Abrir el congelador': {
-				'text': "<p><div align=\"justify\">\nAl abrirlo, una densa neblina emana. Al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align=\"justify\"></p>\n<p><br>\n<b><p><em>Has ganado 1 punto de locura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'text': "<p><div align=\"justify\">\nAl abrirlo, una densa neblina emana. Al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align=\"justify\"></p>\n<p><br></p>\n<audio\n  src=\"gameover.ogg\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<p><b><p><em>Has ganado 1 punto de locura. Tus puntos de locura son {Locura}.</em></p></b></p>",
 				'attributes': ["Locura+=1"],
 			},
 			'TV vieja': {
@@ -1003,13 +1001,13 @@ squiffy.story.sections = {
 		},
 	},
 	'Observar2': {
-		'text': "<div align=\"center\">\n<img src=\"11.png\">\n</div> \n\n\n<div align=\"justify\">\nEl hombre que se hace llamar Gulli, ha pasado a un lado del casillero. Al no verte atado a la silla, ha soltado un alarido pavoroso y ha salido corriendo por el pasillo.<div align=\"justify\">\n\n<div align=\"center\">\n<img src=\"7.png\">\n</div> \n\n\n<p>En la habitación hay:<br>\n<a class=\"squiffy-link link-passage\" data-passage=\"Un viejo congelador\" role=\"link\" tabindex=\"0\">Un viejo congelador</a> | <a class=\"squiffy-link link-passage\" data-passage=\"TV vieja\" role=\"link\" tabindex=\"0\">TV vieja</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Sierras y cuchillos\" role=\"link\" tabindex=\"0\">Sierras y cuchillos</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Ventanilla\" role=\"link\" tabindex=\"0\">Ventanilla</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Casillero\" role=\"link\" tabindex=\"0\">Casillero</a></p>\n<p>Ir a:<br>\n<a class=\"squiffy-link link-section\" data-section=\"EscenaPasillo3\" role=\"link\" tabindex=\"0\">Pasillo</a></p>",
+		'text': "<div align=\"center\">\n<img src=\"11.png\">\n</div> \n\n<audio\n  src=\"horro1.mp3\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<div align=\"justify\">\nEl hombre que se hace llamar Gulli, ha pasado a un lado del casillero. Al no verte atado a la silla, ha soltado un alarido pavoroso y ha salido corriendo por el pasillo.<div align=\"justify\">\n\n<div align=\"center\">\n<img src=\"7.png\">\n</div> \n\n\n<p>En la habitación hay:<br>\n<a class=\"squiffy-link link-passage\" data-passage=\"Un viejo congelador\" role=\"link\" tabindex=\"0\">Un viejo congelador</a> | <a class=\"squiffy-link link-passage\" data-passage=\"TV vieja\" role=\"link\" tabindex=\"0\">TV vieja</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Sierras y cuchillos\" role=\"link\" tabindex=\"0\">Sierras y cuchillos</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Ventanilla\" role=\"link\" tabindex=\"0\">Ventanilla</a> | <a class=\"squiffy-link link-passage\" data-passage=\"Casillero\" role=\"link\" tabindex=\"0\">Casillero</a></p>\n<p>Ir a:<br>\n<a class=\"squiffy-link link-section\" data-section=\"EscenaPasillo3\" role=\"link\" tabindex=\"0\">Pasillo</a></p>",
 		'passages': {
 			'Un viejo congelador': {
 				'text': "<p><div align=\"justify\">\nHay un viejo congelador a tu lado derecho. Parece que esta en funcionamiento, tal vez puedes <a class=\"squiffy-link link-passage\" data-passage=\"Abrir el congelador\" role=\"link\" tabindex=\"0\">Abrir el congelador</a> para ver si hay algo útil.<div align=\"justify\"></p>",
 			},
 			'Abrir el congelador': {
-				'text': "<p><div align=\"justify\">\nAl abrirlo, una densa neblina emana, al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align=\"justify\"></p>\n<p><br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'text': "<p><div align=\"justify\">\nAl abrirlo, una densa neblina emana, al ver con más atención...te horrorizas al darte cuenta que esta repleto de brazos humanos. Es mejor que se mantenga cerrado.<div align=\"justify\"></p>\n<audio\n  src=\"gameover.ogg\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<p><br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
 				'attributes': ["Locura+=1"],
 			},
 			'TV vieja': {
@@ -1074,13 +1072,13 @@ squiffy.story.sections = {
 				'attributes': ["score-=10"],
 			},
 			'C': {
-				'text': "<p>No es buena idea, ¿y si ahí se encuentra el hombre gordo?</p>\n<pre><code>    {if Locura&gt;3:* &lt;a class=&quot;squiffy-link link-section&quot; data-section=&quot;danger&quot; role=&quot;link&quot; tabindex=&quot;0&quot;&gt;Continuar...&lt;/a&gt;} {else: Sientes que un escalofrío hiela tu columna vertebral...}  \n</code></pre><p><br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'text': "<p>No es buena idea, ¿y si ahí se encuentra el hombre gordo?</p>\n<audio\n  src=\"gameover.ogg\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>       \n\n<pre><code>    {if Locura&gt;3:* &lt;a class=&quot;squiffy-link link-section&quot; data-section=&quot;danger&quot; role=&quot;link&quot; tabindex=&quot;0&quot;&gt;Continuar...&lt;/a&gt;} {else: Sientes que un escalofrío hiela tu columna vertebral...}  \n</code></pre><p><br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
 				'attributes': ["score-=50","Locura+=1"],
 			},
 		},
 	},
 	'danger': {
-		'text': "<div align=\"center\">\n<img src=\"9.png\">\n</div> \n\n\n<div align=\"justify\">\nCaminas tembloroso hacia la habitación. Las luces encendiéndose y apagándose de manera intermitente te pone de nervios. Cuando entras, te horrorizas al ver cuerpos apilados uno encima de otro, sobre un charco de sangre, iluminados por una luz azul en la esquina de la habitación. De repente, Gulli, aparece detrás de tí y te dice:\n\n- ¡No debes estar aquí, malnacido! - exclama, luego enciende la motosierra que tiene entre las manos. Ha llegado tu fin.<div align=\"justify\">\n\n<div align=\"center\">\n<img src=\"10.png\">\n</div> \n\n\n<p><a class=\"squiffy-link link-section\" data-section=\"Findeljuego\" role=\"link\" tabindex=\"0\">Continuar...</a></p>",
+		'text': "<div align=\"center\">\n<img src=\"9.png\">\n</div> \n\n\n<div align=\"justify\">\nCaminas tembloroso hacia la habitación. Las luces encendiéndose y apagándose de manera intermitente te pone de nervios. Cuando entras, te horrorizas al ver cuerpos apilados uno encima de otro, sobre un charco de sangre, iluminados por una luz azul en la esquina de la habitación. De repente, Gulli, aparece detrás de tí y te dice:\n\n- ¡No debes estar aquí, malnacido! - exclama, luego enciende la motosierra que tiene entre las manos. Ha llegado tu fin.<div align=\"justify\">\n\n<audio\n  src=\"horro7.mp3\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<div align=\"center\">\n<img src=\"10.png\">\n</div> \n\n\n<p><a class=\"squiffy-link link-section\" data-section=\"Findeljuego\" role=\"link\" tabindex=\"0\">Continuar...</a></p>",
 		'passages': {
 		},
 	},
@@ -1102,7 +1100,7 @@ squiffy.story.sections = {
 				},
 			},
 			'C': {
-				'text': "<p>No es buena idea, ¿y si ahí se encuentra el hombre gordo?\n        {if Locura&gt;3:* <a class=\"squiffy-link link-section\" data-section=\"danger\" role=\"link\" tabindex=\"0\">Continuar...</a>} {else: Sientes que un escalofrío hiela tu columna vertebral...}<br><br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
+				'text': "<p>No es buena idea, ¿y si ahí se encuentra el hombre gordo?</p>\n<audio\n  src=\"gameover.ogg\"\n  autoplay>\n  Your browser does not support the <code>audio</code> element.\n</audio>\n\n<pre><code>    {if Locura&gt;3:* &lt;a class=&quot;squiffy-link link-section&quot; data-section=&quot;danger&quot; role=&quot;link&quot; tabindex=&quot;0&quot;&gt;Continuar...&lt;/a&gt;} {else: Sientes que un escalofrío hiela tu columna vertebral...}  \n</code></pre><p><br>\n<b><p><em>Has ganado 1 punto de locura. Estás perdiendo la cordura. Tus puntos de locura son {Locura}.</em></p></b></p>",
 				'attributes': ["score-=50","Locura+=1"],
 			},
 		},
@@ -1140,7 +1138,7 @@ squiffy.story.sections = {
 		},
 	},
 	'Status1': {
-		'text': "<p><div align=\"center\"><b><p><em>STATUS</em></p></b></div></p>\n<p><div align=\"center\"><p><em>Puntos de vida: {Health}</em></p></div></p>\n<p><div align=\"center\"><p><em>Cordura: {Locura}</em></p></div>\n<br>\n<br>\n        {if Health&gt;3:<em> Te han herido, pero has sabido manejar la situación.} {else:</em> Has estado a punto de morir...}</p>\n<pre><code>    {if Locura&gt;3:* Tus nervios y cordura casi te hacen morir.} {else:* Tienes nervios de acero...}\n</code></pre><p><a class=\"squiffy-link link-section\" data-section=\"start\" role=\"link\" tabindex=\"0\">Continuar...</a></p>",
+		'text': "<p><div align=\"center\"><b><p><em>STATUS</em></p></b></div></p>\n<p><div align=\"center\"><p><em>Score Total: {score}</em></p></div></p>\n<p><div align=\"center\"><p><em>Puntos de Vida: {Health}</em></p></div></p>\n<p><div align=\"center\"><p><em>Cordura: {Locura}</em></p></div>\n<br>\n<br>\n        {if Health&gt;3:<em> Te han herido, pero has sabido manejar la situación.} \n        {if Health=3:</em> Eso ha dolido...} \n        {if Health=2:<em> Lo tuyo no es la supervivencia.} \n        {if Health=1:</em> Por un pelo...} </p>\n<pre><code>    {if Locura&gt;3:* Estas chalado.} \n     {if Locura=3:* ¿Que eso que se ve en la oscuridad?.}\n      {if Locura=2:* Esto ha comenzado a ponerte nervioso.}\n       {if Locura=1:* Cuerdo Clínicamanete.}\n</code></pre><p><a class=\"squiffy-link link-section\" data-section=\"start\" role=\"link\" tabindex=\"0\">Continuar...</a></p>",
 		'passages': {
 		},
 	},
